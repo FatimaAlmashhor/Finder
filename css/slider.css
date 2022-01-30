@@ -1,0 +1,9 @@
+.infint_slider__vertical{
+    position: relative;
+    height: 80vh;
+    overflow:hidden ;
+}
+
+.infint_slider_col {
+    position: absolute;
+}

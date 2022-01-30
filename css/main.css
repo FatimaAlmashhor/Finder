@@ -1,0 +1,22 @@
+@import '../utils/bootstramp/bootstrap.min.css';
+@import './reset.css';
+
+.bg-purple-primary{
+    background: var(--colors-purple-primary);
+}
+.bg-purple-secondary {
+    background: var(--color-purple-scondary);
+}
+.bg-zircon{
+    background: var(--colors-zircon);
+}
+.color-white{
+    color: var(--color-white)
+}
+.color-gray{
+    color: var(--color-gray)
+}
+.header{
+    width: 100%;
+    min-height: 80vh;
+}
