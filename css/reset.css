@@ -1,5 +1,5 @@
 :root{
-    --colors-purple-primary: linear-gradient(227deg,#5240CB 0%,#3C2E92 80%);
+    --colors-purple-primary: linear-gradient(227deg,#5240CB 0%,#302866 80%);
     --color-purple-scondary  :#EEF3FD;     
     --color-purple-light  :#F8FAFF;     
     --colors-zircon: linear-gradient(180deg,#F9FBFF 0%,#F0F5FF 100%);
@@ -9,6 +9,7 @@
     --color-white-gray : #FBFBFB;
     --border-color-gray : #E5E5E5;
     --text-gray : #757575;
+    --color-dark-blue : #302866;
     --xxxl-font : 82px;
     --xxl-font : 64px;
     --xl-font : 46px;

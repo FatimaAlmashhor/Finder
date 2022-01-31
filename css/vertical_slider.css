@@ -1,0 +1,18 @@
+.infint_slider__vertical{
+    position: relative;
+    /* z-index: 1; */
+}
+.infint_slider_col {
+    transform: rotate(40deg);
+    position: relative;
+}
+.verical_slider_warrper{
+    position: absolute;
+    top:0px;
+    opacity: 1;
+    left: 0px;
+}
+[data-left='200']{
+    left: 530px;
+    top:-80px
+}

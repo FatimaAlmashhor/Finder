@@ -17,7 +17,7 @@
     <!-- nav bar -->
 
     <header class=" bg-purple-primary header">
-        <nav class="navbar navbar-expand-md container-lg text-white navbar-light  d-flex flex-row">
+        <nav class="navbar navbar-expand-md container-lg text-white navbar-light  d-flex flex-row ">
             <div class="container-fluid ">
                 <a class="navbar-brand font-lg text-white" href="#">Finder</a>
                 <div class="d-flex flex-row align-items-center " data-bs-toggle="collapse"
@@ -28,18 +28,21 @@
                     </button>
                     <!-- customer login -->
                     <div class="bg-purple-primary d-flex mx-2 ">
-                        <a href='./login.html' class="btn btn-primary d-lg-none ">
+                        <a href='./login.html' class="btn btn-primary d-md-none ">
                             <!-- <i class="bi bi-coin"></i> -->
                             Sign in
                         </a>
                     </div>
                 </div>
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-                    <div class="navbar-nav align-items-center ">
-                        <a class="nav-link text-white active" aria-current="page" href="#">Home</a>
-                        <a class="nav-link text-white" href="./jobs.html">Jobs</a>
-                        <a class="nav-link text-white" href="./compenies.html">Companies</a>
-                        <a class="nav-link text-white " href="./contactus.html" tabindex="-1">Contact Us</a>
+                    <div
+                        class="navbar-nav align-items-center d-flex flex-row justify-content-between w-100 align-items-center">
+                        <div class="d-flex flex-row align-items-center">
+                            <a class="nav-link text-white active" aria-current="page" href="#">Home</a>
+                            <a class="nav-link text-white" href="./jobs.html">Jobs</a>
+                            <a class="nav-link text-white" href="./compenies.html">Companies</a>
+                            <a class="nav-link text-white " href="./contactus.html" tabindex="-1">Contact Us</a>
+                        </div>
                         <a href='./login.html' class="btn btn-primary d-sm-none d-md-flex ">
                             Sign in
                         </a>
@@ -48,71 +51,121 @@
             </div>
         </nav>
         <div class="header_container container mh-100 ">
-            <div class="row h-100 ">
-                <div class="col-lg-6 col-12 d-flex flex-column  justify-content-center align-items-start mt-5  align-self-center  h-100">
+            <div class="row h-100 " style="margin-top: 8rem;">
+                <div
+                    class="col-lg-6 col-12 d-flex flex-column  justify-content-center align-items-start mt-5  align-self-center  h-100">
                     <h1 class="color-white Light font-xxxl">Finder</h1>
-                    <p class="color-gray">One place to find your dream</p>
-                    <button class="btn btn-primary p-3" style="width: fit-content;">Get Started</button>
+                    <p class="color-white">One place to find your dream</p>
+                    <button class="btn bg-purple-secondary  text-black border-white py-2 px-4"
+                        style="width: fit-content;">Get Started</button>
                 </div>
                 <div class="col-6 d-none d-lg-flex">
-                    <div class="infint_slider__vertical">
-                        <div class="infint_slider_col ">
-                            <div class="d-flex justify-content-center h-100">
-                                <div class="search"> <input type="text" class="search-input" placeholder="search..."
-                                        name=""> <a href="#" class="search-icon"> <i class="fa fa-search"></i> </a>
-                                </div>
-                            </div>
-                            <!-- <ul class="row d-flex flex-column gy-2  ">
-                                <li style="width:250px ; height : 200px">
+                    <div class="infint_slider__vertical d-flex flex-row ">
+                        <div class="infint_slider_col " data-left='200'>
+
+                            <ul class="verical_slider_warrper row d-flex flex-column gy-2  ">
+                                <li style="width: 200px;
+                                height: 160px;">
                                     <div class="card" style="width: inherit; height: inherit;">
-                                        <div class="card-body">
-                                          <p class="card-text">With supporting text below .</p>
+                                        <div
+                                            class="card-body d-flex flex-column justify-content-center align-items-center mx-auto">
+                                            <i class="bi bi-alarm" style="font-size: 2rem; color:brown"></i>
+                                            <span class="card-text text-center color-gray">Save your time.</span>
                                         </div>
-                                      </div>
+                                    </div>
                                 </li>
-                                <li style="width:250px ; height : 200px">
+                                <li style="width: 200px;
+                                height: 160px;">
                                     <div class="card" style="width: inherit; height: inherit;">
-                                        <div class="card-body">
-                                          <p class="card-text">With supporting text below .</p>
+                                        <div
+                                            class="card-body d-flex flex-column justify-content-center align-items-center mx-auto">
+                                            <i class="bi bi-arrow-up-left-circle"
+                                                style="font-size: 2rem; color:cadetblue"></i>
+                                            <span class="card-text text-center color-gray">Skills up.</span>
                                         </div>
-                                      </div>
+                                    </div>
                                 </li>
-                                <li style="width:250px ; height : 200px">
+                                <li style="width: 200px;
+                                height: 160px;">
                                     <div class="card" style="width: inherit; height: inherit;">
-                                        <div class="card-body">
-                                          <p class="card-text">With supporting text below .</p>
+                                        <div
+                                            class="card-body d-flex flex-column justify-content-center align-items-center mx-auto">
+                                            <i class="bi bi-bookmark-check"
+                                                style="font-size: 2rem; color:cornflowerblue"></i>
+                                            <span class="card-text text-center color-gray">Tack your compeny.</span>
                                         </div>
-                                      </div>
+                                    </div>
                                 </li>
-                                <li style="width:250px ; height : 200px">
+                                <li style="width: 200px;
+                                height: 160px;">
                                     <div class="card" style="width: inherit; height: inherit;">
-                                        <div class="card-body">
-                                          <p class="card-text">With supporting text below .</p>
+                                        <div
+                                            class="card-body d-flex flex-column justify-content-center align-items-center mx-auto">
+                                            <i class="bi bi-alarm" style="font-size: 2rem; color:brown"></i>
+                                            <span class="card-text text-center color-gray">Save your time.</span>
                                         </div>
-                                      </div>
+                                    </div>
                                 </li>
-                                <li style="width:250px ; height : 200px">
+                                <li style="width: 200px;
+                                height: 160px;">
                                     <div class="card" style="width: inherit; height: inherit;">
-                                        <div class="card-body">
-                                          <p class="card-text">With supporting text below .</p>
+                                        <div
+                                            class="card-body d-flex flex-column justify-content-center align-items-center mx-auto">
+                                            <i class="bi bi-alarm" style="font-size: 2rem; color:brown"></i>
+                                            <span class="card-text text-center color-gray">Save your time.</span>
                                         </div>
-                                      </div>
+                                    </div>
                                 </li>
-                                <li style="width:250px ; height : 200px">
+
+                            </ul>
+
+                        </div>
+                        <div class="infint_slider_col " style="left: 180px;">
+
+                            <ul class="verical_slider_warrper row d-flex flex-column gy-2  ">
+                                <li style="width: 200px;
+                                height: 160px;">
                                     <div class="card" style="width: inherit; height: inherit;">
-                                        <div class="card-body">
-                                          <p class="card-text">With supporting text below .</p>
+                                        <div
+                                            class="card-body d-flex flex-column justify-content-center align-items-center mx-auto">
+                                            <i class="bi bi-alarm" style="font-size: 2rem; color:brown"></i>
+                                            <span class="card-text text-center color-gray">Save your time.</span>
                                         </div>
-                                      </div>
+                                    </div>
                                 </li>
-                                <li style="width:250px ; height : 200px">
+                                <li style="width: 200px;
+                                height: 160px;">
                                     <div class="card" style="width: inherit; height: inherit;">
-                                        <div class="card-body">
-                                          <p class="card-text">With supporting text below .</p>
+                                        <div
+                                            class="card-body d-flex flex-column justify-content-center align-items-center mx-auto">
+                                            <i class="bi bi-arrow-up-left-circle"
+                                                style="font-size: 2rem; color:cadetblue"></i>
+                                            <span class="card-text text-center color-gray">Skills up.</span>
                                         </div>
-                                      </div>
+                                    </div>
                                 </li>
-                            </ul> -->
+                                <li style="width: 200px;
+                                height: 160px;">
+                                    <div class="card" style="width: inherit; height: inherit;">
+                                        <div
+                                            class="card-body d-flex flex-column justify-content-center align-items-center mx-auto">
+                                            <i class="bi bi-bookmark-check"
+                                                style="font-size: 2rem; color:cornflowerblue"></i>
+                                            <span class="card-text text-center color-gray">Tack your compeny.</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li style="width: 200px;
+                                height: 160px;">
+                                    <div class="card" style="width: inherit; height: inherit;">
+                                        <div
+                                            class="card-body d-flex flex-column justify-content-center align-items-center mx-auto">
+                                            <i class="bi bi-alarm" style="font-size: 2rem; color:brown"></i>
+                                            <span class="card-text text-center color-gray">Save your time.</span>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
 
                         </div>
                     </div>
@@ -123,6 +176,15 @@
     </header>
 
     <main class="">
+        <!-- search -->
+        <section class="w-100">
+            <div class="d-flex justify-content-center h-100 ">
+                <div class="search shadow-sm border-gray"> <input type="text" class="search-input" placeholder="search..." name=""> <a
+                        href="#" class="search-icon"> <i class="fa fa-search"></i> </a>
+                </div>
+            </div>
+        </section>
+
         <!-- slider -->
         <div id="myCarousel" class="carousel slide bg-purple-secondary" data-bs-ride="carousel">
             <div class="carousel-indicators ">
@@ -147,27 +209,27 @@
                 <div class="carousel-item h-100">
                     <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
                         aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
-                        <rect width="100%" height="100%" fill="#777" />
                     </svg>
 
                     <div class="container">
                         <div class="carousel-caption">
-                            <h1>Another example headline.</h1>
-                            <p>Some representative placeholder content for the second slide of the carousel.</p>
+                            <h1 class="text-black">Another example headline.</h1>
+                            <p class="color-gray">Some representative placeholder content for the second slide of the
+                                carousel.</p>
                             <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
                         </div>
                     </div>
                 </div>
-                <div class="carousel-item h-100">
+                <div class="carousel-item h-100 text-black">
                     <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
                         aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
-                        <rect width="100%" height="100%" fill="#777" />
                     </svg>
 
                     <div class="container">
                         <div class="carousel-caption text-end">
-                            <h1>One more for good measure.</h1>
-                            <p>Some representative placeholder content for the third slide of this carousel.</p>
+                            <h1 class="text-black">One more for good measure.</h1>
+                            <p class="color-gray">Some representative placeholder content for the third slide of this
+                                carousel.</p>
                             <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
                         </div>
                     </div>
@@ -265,7 +327,13 @@
 
         <!-- our companies -->
         <section class="bg-purple-primary w-100">
-
+            <div class="w-100 d-flex flex-wrap flex-row justify-content-around p-3">
+                <div class="text-white mx-2">Test</div>
+                <div class="text-white mx-2">Test</div>
+                <div class="text-white mx-2">Test</div>
+                <div class="text-white mx-2">Test</div>
+                <div class="text-white mx-2">Test</div>
+            </div>
         </section>
 
         <!-- employee section -->

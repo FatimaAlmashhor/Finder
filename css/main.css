@@ -4,7 +4,13 @@
 @import './card.css';
 @import './contact.css';
 @import './search.css';
+@import './vertical_slider.css';
 
+.navbar {
+    z-index: 1000 !important;
+    /* background-color:var( --colors-purple-primary); */
+    /* mix-blend-mode: difference; */
+}
 .bg-purple-primary{
     background: var(--colors-purple-primary);
 }
@@ -13,6 +19,9 @@
 }
 .bg-zircon{
     background: var(--colors-zircon);
+}
+.bg-dark-blue{
+    background: var(--color-dark-blue);
 }
 .bg-white-gray{
     background-color: var(--color-white-gray);
@@ -28,7 +37,8 @@
 }
 .header{
     width: 100%;
-    min-height: 80vh;
+    min-height: 90vh;
+    overflow: hidden;
 }
 
 .social-link {
