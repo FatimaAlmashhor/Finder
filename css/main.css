@@ -5,6 +5,7 @@
 @import './contact.css';
 @import './search.css';
 @import './vertical_slider.css';
+@import './profile.css';
 
 .navbar {
     z-index: 1000 !important;
