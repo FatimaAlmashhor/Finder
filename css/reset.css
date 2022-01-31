@@ -49,3 +49,6 @@ ul{
     font-size: var(--xs-font);
 }
 
+.pointer{
+    cursor: pointer;
+}
