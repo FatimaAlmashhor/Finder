@@ -17,6 +17,9 @@
 .bg-white-gray{
     background-color: var(--color-white-gray);
 }
+.bg-yellow{
+    background-color: var(--color-yellow);
+}
 .color-white{
     color: var(--color-white)
 }
@@ -45,4 +48,24 @@
     background: #ddd;
     text-decoration: none;
     color: #555;
+}
+.border-gray{
+    border: 1px solid var(--border-color-gray);
+}
+.badge span{
+    min-width: 70px;
+}
+.active-post{
+    position: relative;
+    padding: 0px 13px;
+}
+.active-post::before{
+    position: absolute;
+    content: '';
+    top:40%;
+    left: 0px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: rgb(54, 207, 54);
 }
