@@ -5,7 +5,9 @@
     --colors-zircon: linear-gradient(180deg,#F9FBFF 0%,#F0F5FF 100%);
     --transparent : transparent ;
     --color-white : white;
-    --color-gray : rgb(223, 223, 223);
+    --color-white-gray : #FBFBFB;
+    --border-color-gray : #E5E5E5;
+    --text-gray : #757575;
     --xxxl-font : 82px;
     --xxl-font : 64px;
     --xl-font : 46px;
@@ -44,4 +46,7 @@ ul{
 }
 .font-xs{
     font-size: var(--xs-font);
+}
+.border-gray{
+    border: 1px solid var(--border-color-gray);
 }

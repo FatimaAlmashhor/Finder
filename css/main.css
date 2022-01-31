@@ -14,11 +14,14 @@
 .bg-zircon{
     background: var(--colors-zircon);
 }
+.bg-white-gray{
+    background-color: var(--color-white-gray);
+}
 .color-white{
     color: var(--color-white)
 }
 .color-gray{
-    color: var(--color-gray)
+    color: var(--text-gray)
 }
 .header{
     width: 100%;
