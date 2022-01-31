@@ -16,36 +16,43 @@
 <body>
   <!-- nav bar -->
 
-  <nav class="navbar navbar-expand-md bg-white   navbar-light  d-flex flex-row">
-    <div class="container-fluid ">
-      <a class="navbar-brand font-lg text-black" href="#">Finder</a>
-      <div class="d-flex flex-row align-items-center " data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <button class="navbar-toggler" type="button">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <!-- customer login -->
-        <div class="bg-purple-primary d-flex mx-2 ">
-          <button class="btn btn-primary d-lg-none ">
-            <!-- <i class="bi bi-coin"></i> -->
-            Sign in
-          </button>
+  <nav class="navbar navbar-expand-md border-bottom container-lg text-black navbar-light  d-flex flex-row ">
+    <div class="container-fluid  ">
+        <a class="navbar-brand font-lg text-black" href="./index.html">Finder</a>
+        <div class="d-flex flex-row  align-items-center ">
+            <button class="navbar-toggler" type="button " data-bs-toggle="collapse"
+                data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- customer login -->
+            <div class=" d-flex mx-2 d-md-none ">
+                <a href='./login.html' class="login_checked btn btn-primary ">
+                    <!-- <i class="bi bi-coin"></i> -->
+                    Sign in
+                </a>
+                <a href='./profile.html'><i class="profile bi bi-person-fill pointer  text-black" style="font-size: 2rem;  "></i></a>
+            </div>
         </div>
-      </div>
-      <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-        <div class="navbar-nav align-items-center ">
-          <a class="nav-link text-black active" aria-current="page" href="#">Home</a>
-          <a class="nav-link text-black" href="
-                    #">Jobs</a>
-          <a class="nav-link text-black" href="#">Companies</a>
-          <a class="nav-link text-black " href="#" tabindex="-1">Contact Us</a>
-          <button class="btn btn-primary d-sm-none d-md-flex ">
-            Sign in
-          </button>
+        <div class="collapse navbar-collapse justify-content-end  " id="navbarNavAltMarkup">
+            <div class="d-flex flex-row justify-content-center ">
+                <div class="navbar-nav align-items-center">
+                    <a class="nav-link text-black active" aria-current="page" href="./index.html">Home</a>
+                    <a class="nav-link text-black" href="./jobs.html">Jobs</a>
+                    <a class="nav-link text-black" href="./compenies.html">Companies</a>
+                    <a class="nav-link text-black " href="./contactus.html" tabindex="-1">Contact Us</a>
+
+                </div>
+            </div>
+           <div class=" d-none d-md-flex">
+            <a href='./login.html' class="login_checked btn btn-primary mx-3 d-none d-md-flex ">
+                login
+            </a>
+            <a href='./profile.html'><i class="profile bi bi-person-fill pointer text-black " style="font-size: 2rem;  "></i></a>
+           </div>
         </div>
-      </div>
     </div>
-  </nav>
+</nav>
   <main class="bg-purple-secondary">
     <div class="container contact-form">
       <div class="contact-image">
