@@ -1,8 +1,7 @@
 
 .search {
+    position: relative;
     margin-bottom: auto;
-    margin-top: 100px;
-    margin-bottom: 100px;
     height: 70px;
     background-color: #fff;
     padding: 10px
@@ -23,7 +22,7 @@
 
 .search .search-input {
     padding: 0 10px;
-    width: 550px;
+    min-width : 100%;
     caret-color: #536bf6;
     font-size: 21px;
     font-weight: 300;
@@ -37,6 +36,8 @@
 }
 
 .search-icon {
+    position: absolute;
+    right: 5px;
     height: 50px;
     width: 50px;
     float: right;
