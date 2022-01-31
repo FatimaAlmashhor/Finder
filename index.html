@@ -18,35 +18,35 @@
 
     <header class=" bg-purple-primary header">
         <nav class="navbar navbar-expand-md container-lg text-white navbar-light  d-flex flex-row ">
-            <div class="container-fluid ">
+            <div class="container-fluid  ">
                 <a class="navbar-brand font-lg text-white" href="#">Finder</a>
-                <div class="d-flex flex-row align-items-center " data-bs-toggle="collapse"
-                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <button class="navbar-toggler" type="button">
+                <div class="d-flex flex-row  align-items-center ">
+                    <button class="navbar-toggler" type="button " data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                        aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <!-- customer login -->
                     <div class="bg-purple-primary d-flex mx-2 ">
-                        <a href='./login.html' class="btn btn-primary d-md-none ">
+                        <a href='./login.html' class="login_checked btn btn-primary d-md-none ">
                             <!-- <i class="bi bi-coin"></i> -->
                             Sign in
                         </a>
                     </div>
                 </div>
-                <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-                    <div
-                        class="navbar-nav align-items-center d-flex flex-row justify-content-between w-100 align-items-center">
-                        <div class="d-flex flex-row align-items-center">
-                            <a class="nav-link text-white active" aria-current="page" href="#">Home</a>
+                <div class="collapse navbar-collapse justify-content-between  " id="navbarNavAltMarkup">
+                    <div class="d-flex flex-row justify-content-center ">
+                        <div class="navbar-nav align-items-center">
+                            <a class="nav-link text-white active" aria-current="page" href="./index.html">Home</a>
                             <a class="nav-link text-white" href="./jobs.html">Jobs</a>
                             <a class="nav-link text-white" href="./compenies.html">Companies</a>
                             <a class="nav-link text-white " href="./contactus.html" tabindex="-1">Contact Us</a>
+
                         </div>
-                        <a href='./login.html' class="btn btn-primary d-sm-none d-md-flex ">
-                            Sign in
-                        </a>
                     </div>
+                    <a href='./login.html' class="login_checked btn btn-primary mx-3 d-none d-md-flex ">
+                        login
+                    </a>
                 </div>
             </div>
         </nav>
@@ -570,7 +570,7 @@
                                 <li>
                                     <a href="./compenies.html" class="text-white">Compenies</a>
                                 </li>
-                                <li>
+                                <li class="login_checked">
                                     <a href="./login.html" class=" btn bg-white text-black mt-2">Login</a>
                                 </li>
 
@@ -584,7 +584,7 @@
                                     <a href="./jobs.html" class="search-icon "> <i class="bi bi-blus"></i> Go </a>
                                 </div>
                             </div>
-                            
+
                         </div>
                     </div>
                     <!--Grid row-->
