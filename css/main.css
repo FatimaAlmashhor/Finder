@@ -1,5 +1,9 @@
-/* @import '../utils/bootstramp/bootstrap.min.css'; */
+@import '../utils/bootstramp/bootstrap.min.css';
 @import './reset.css';
+@import './login.css';
+@import './card.css';
+@import './contact.css';
+@import './search.css';
 
 .bg-purple-primary{
     background: var(--colors-purple-primary);
@@ -19,4 +23,23 @@
 .header{
     width: 100%;
     min-height: 80vh;
+}
+
+.social-link {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #666;
+    border-radius: 50%;
+    transition: all 0.3s;
+    font-size: 0.9rem;
+}
+
+.social-link:hover, .social-link:focus {
+    background: #ddd;
+    text-decoration: none;
+    color: #555;
 }
