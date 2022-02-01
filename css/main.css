@@ -9,6 +9,11 @@
 
 .navbar {
     z-index: 1000 !important;
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    /* background: black; */
+    box-shadow: none;
     /* background-color:var( --colors-purple-primary); */
     /* mix-blend-mode: difference; */
 }
