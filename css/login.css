@@ -78,15 +78,22 @@
   padding: 0 25px 0 33px
 }
 
-.form-control {
+.form-login-control {
+  display: block;
+  width: 100%;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
   border: 1px solid #57557A;
   border-radius: 3px;
   background: #212042;
   margin-bottom: 20px;
-  letter-spacing: 1px
+  letter-spacing: 1px;
+  color: #fff;
 }
 
-.form-control:focus {
+.form-login-control:focus {
   border: 1px solid #57557A;
   border-radius: 3px;
   box-shadow: none;
