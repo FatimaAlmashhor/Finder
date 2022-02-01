@@ -63,8 +63,8 @@
 <body>
   <!-- nav bar -->
 
-  <nav class="navbar navbar-expand-md border-bottom container-lg text-black navbar-light  d-flex flex-row ">
-    <div class="container-fluid  ">
+  <nav class="navbar navbar-expand-md border-bottom bg-white  text-black navbar-light  d-flex flex-row ">
+    <div class="container-fluid  container-lgs">
       <a class="navbar-brand font-lg text-black" href="./index.html">Finder</a>
       <div class="d-flex flex-row  align-items-center ">
         <button class="navbar-toggler" type="button " data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
@@ -103,14 +103,14 @@
   </nav>
   <main class="my-6">
     <!-- search section  -->
-    <div class="container my-sm-5">
+    <div class="container my-sm-5 position-sticky">
       <div class="row my-4 d-flex justify-content-center align-items-center">
         <div class="col-md-10">
           <div class=" row gx-1 gy-2 align-items-center">
             <div class="col-12 col-lg-7">
               <div class="form  ">
                 <i class="fa fa-search"></i>
-                <input type="text" class="form-control form-input" placeholder="What ?"> <span class="left-pan"><i
+                <input id='what_search' type="text" class="form-control form-input" placeholder="What ?"> <span class="left-pan"><i
                     class="bi bi-search"></i></span>
               </div>
             </div>
@@ -144,6 +144,19 @@
               </div>
             </div>
           </div>
+          
+
+<!-- <div class="dropdown">
+  <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+    Dropdown link
+  </a>
+
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+    <li><a class="dropdown-item" href="#">Action</a></li>
+    <li><a class="dropdown-item" href="#">Another action</a></li>
+    <li><a class="dropdown-item" href="#">Something else here</a></li>
+  </ul>
+</div> -->
         </div>
       </div>
     </div>
@@ -156,12 +169,12 @@
 
             <!-- left slide -->
             <div class=" d-flex w-100 flex-column">
-              <a href='./jobdetails.html' class="card text-black p-3 mb-2">
-                <div class="d-flex justify-content-between">
+              <div class="card text-black p-3 mb-2">
+                <div class="d-flex justify-content-between pointer">
 
                   <div class='text-black' >
-                    <h3 class="heading">Software Architect</h3>
-                    <p class="m-0 p-1 text-black">Riddle </p>
+                    <a href='./jobdetails.html' class="text-black"><h3 class="heading job_name">Software Architect</h3></a>
+                    <p class="m-0 p-1 text-black compeny_name">Riddle </p>
                     <!-- location and remote  -->
                     <div class="d-flex flex-row align-items-center">
                       <p class=" p-1 color-gray">US - lose anglous</p>
@@ -175,7 +188,7 @@
                       </div>
                       <div
                         class='badge mx-3 bg-white-gray border-gray text-black d-flex flex-row justify-content-center align-items-center'>
-                        <p class="m-0 p-1 color-gray">Full time</p>
+                        <p class="m-0 p-1 color-gray job_type">Full time</p>
                       </div>
                     </div>
 
@@ -198,7 +211,7 @@
                     </div>
                   </div>
                 </div>
-              </a>
+              </div>
               <a href='./jobdetails.html' class="card text-black p-3 mb-2">
                 <div class="d-flex justify-content-between">
 
@@ -464,7 +477,8 @@
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>
   <!-- <script  src="./utils/bootstramp/bootstrap.min.js"></script> -->
-  <script type='module' src="./js/main.js"></script>
+  <script type='module' src="./utils/jquery-3.6.0.min.js"></script>
+  <script type='module' src="./js/search.js"></script>
 </body>
 
 </html>

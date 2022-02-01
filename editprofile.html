@@ -16,19 +16,23 @@
         .profile-head {
             transform: translateY(5rem)
         }
-        .dashboard-side:hover{
+
+        .dashboard-side:hover {
             background: rgb(235, 234, 234);
         }
-        .dashboard-side.active{
+
+        .dashboard-side.active {
             background: rgb(238, 237, 237);
             border: 1px solid rgb(206, 190, 190);
-            color:black;
+            color: black;
             transition: 0.3s;
         }
-        .profile_page{
+
+        .profile_page {
             display: none;
         }
-        .profile_page.show{
+
+        .profile_page.show {
             display: block;
         }
     </style>
@@ -81,8 +85,9 @@
                             <div class="media d-flex flex-row align-items-end profile-head">
                                 <div class="profile mr-3 d-flex flex-column"><img
                                         src="https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80"
-                                        alt="..." width="130" class="rounded mb-2 img-thumbnail"><a href="./profile.html"
-                                        class="btn btn-outline-dark btn-sm btn-block">View your profile</a></div>
+                                        alt="..." width="130" class="rounded mb-2 img-thumbnail"><a
+                                        href="./profile.html" class="btn btn-outline-dark btn-sm btn-block">View your
+                                        profile</a></div>
 
                                 <div class="media-body mb-5 text-white mx-2">
                                     <h4 class="mt-0 mb-0">Mark Williams</h4>
@@ -117,31 +122,36 @@
                                 <div class="p-1 ">
                                     <div class='text-black  bg-secondary rounded'>
                                         <ul class="list-group mb-3 shadow-sm">
-                                            <li data-btn-id='0' class="dashboard-side active list-group-item d-flex justify-content-between lh-condensed pointer">
+                                            <li data-btn-id='0'
+                                                class="dashboard-side active list-group-item d-flex justify-content-between lh-condensed pointer">
                                                 <div>
                                                     <h6 class="my-0">Edit Your Inforamtion</h6>
                                                     <small class="text-muted">Name , email ...</small>
                                                 </div>
                                             </li>
-                                            <li data-btn-id='1' class=" dashboard-side list-group-item d-flex justify-content-between lh-condensed pointer">
+                                            <li data-btn-id='1'
+                                                class=" dashboard-side list-group-item d-flex justify-content-between lh-condensed pointer">
                                                 <div>
                                                     <h6 class="my-0">Edit Your Skills</h6>
                                                     <small class="text-muted">Writing, documenting ....</small>
                                                 </div>
                                             </li>
-                                            <li data-btn-id='2' class=" dashboard-side list-group-item d-flex justify-content-between lh-condensed pointer">
+                                            <li data-btn-id='2'
+                                                class=" dashboard-side list-group-item d-flex justify-content-between lh-condensed pointer">
                                                 <div>
                                                     <h6 class="my-0">Edit Your Education</h6>
                                                     <small class="text-muted">High School....</small>
                                                 </div>
                                             </li>
-                                            <li data-btn-id='3' class=" dashboard-side list-group-item  d-flex justify-content-between  pointer">
+                                            <li data-btn-id='3'
+                                                class=" dashboard-side list-group-item  d-flex justify-content-between  pointer">
                                                 <div class="text-success">
                                                     <h6 class="my-0">Edit Your Courses</h6>
                                                     <small>Teaching , google ....</small>
                                                 </div>
                                             </li>
-                                            <li  class=" dashboard-side list-group-item py-2 d-flex justify-content-between pointer">
+                                            <li
+                                                class=" dashboard-side list-group-item py-2 d-flex justify-content-between pointer">
                                                 <span>Login Out</span>
                                                 <!-- <strong>$20</strong> -->
                                             </li>
@@ -150,7 +160,7 @@
                                 </div>
                             </div>
                             <div class="col-12 col-lg-8  rounded shadow-sm border-gray">
-                                <div  class="profile_page show info_page col-12 px-5 py-3 order-md-1">
+                                <div id='about_section' class="profile_page show info_page col-12 px-5 py-3 order-md-1">
                                     <h4 class="mb-3">Add your Information</h4>
                                     <form class="needs-validation" novalidate>
                                         <div class="row">
@@ -315,13 +325,88 @@
                                             checkout</button>
                                     </form>
                                 </div>
-                                <div  class="profile_page skills_page col-12 px-5 py-3 order-md-1">
-                                    test 2
+
+                                <!-- second page -->
+                                <div class="profile_page skills_page col-12 px-5 py-3 order-md-1">
+                                    <div class="d-flex flex-row justify-content-between">
+                                        <h5 class="mb-0 py-2">About</h5>
+                                        <a href='./editprofile.html' class="pointer icon-hover"><i class="bi bi-plus"
+                                                style="font-size: 2rem; color:gray"></i> </a>
+                                    </div>
+                                    <div class=" row rounded  position-relative d-flex py-3">
+                                        <div class="border-bottom col-11 py-3 ">
+                                            <p class="font-italic mb-0 "><i class="bi bi-person"></i>Web Developer</p>
+                                        </div>
+                                        <div class=" edit-icon col-1 col-md-1 pointer flex-row justify-content-end">
+                                            <div class="icon-hover ">
+                                                <!-- Drop down -->
+                                                <div class="dropdown">
+                                                    <a class=" dropdown-toggle" href="#" role="button"
+                                                        id="dropdownMenuLink" data-bs-toggle="dropdown"
+                                                        aria-expanded="false">
+                                                        <i class="bi bi-three-dots-vertical circle-icon"
+                                                            style="font-size: 1.2rem;"></i>
+                                                    </a>
+                                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                                        <li><a class="dropdown-item" href="#">Edit</a></li>
+                                                        <li><a class="dropdown-item" href="#">Delete</a></li>
+                                                        
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class=" row rounded  position-relative d-flex py-3">
+                                        <div class="border-bottom col-11 py-3 ">
+                                            <p class="font-italic mb-0 "><i class="bi bi-person"></i>Web Developer</p>
+                                        </div>
+                                        <div class=" edit-icon col-1 col-md-1 pointer flex-row justify-content-end">
+                                            <div class="icon-hover ">
+                                                <!-- Drop down -->
+                                                <div class="dropdown">
+                                                    <a class=" dropdown-toggle" href="#" role="button"
+                                                        id="dropdownMenuLink" data-bs-toggle="dropdown"
+                                                        aria-expanded="false">
+                                                        <i class="bi bi-three-dots-vertical circle-icon"
+                                                            style="font-size: 1.2rem;"></i>
+                                                    </a>
+                                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                                        <li><a class="dropdown-item" href="#">Edit</a></li>
+                                                        <li><a class="dropdown-item" href="#">Delete</a></li>
+                                                        
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class=" row rounded  position-relative d-flex py-3">
+                                        <div class="border-bottom col-11 py-3 ">
+                                            <p class="font-italic mb-0 "><i class="bi bi-person"></i>Web Developer</p>
+                                        </div>
+                                        <div class=" edit-icon col-1 col-md-1 pointer flex-row justify-content-end">
+                                            <div class="icon-hover ">
+                                                <!-- Drop down -->
+                                                <div class="dropdown">
+                                                    <a class=" dropdown-toggle" href="#" role="button"
+                                                        id="dropdownMenuLink" data-bs-toggle="dropdown"
+                                                        aria-expanded="false">
+                                                        <i class="bi bi-three-dots-vertical circle-icon"
+                                                            style="font-size: 1.2rem;"></i>
+                                                    </a>
+                                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                                        <li><a class="dropdown-item" href="#">Edit</a></li>
+                                                        <li><a class="dropdown-item" href="#">Delete</a></li>
+                                                        
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div  class="profile_page skills_page col-12 px-5 py-3 order-md-1">
+                                <div class="profile_page skills_page col-12 px-5 py-3 order-md-1">
                                     Test 3
                                 </div>
-                                <div  class="profile_page skills_page col-12 px-5 py-3 order-md-1">
+                                <div class="profile_page skills_page col-12 px-5 py-3 order-md-1">
                                     Test 4
                                 </div>
                             </div>
@@ -420,7 +505,7 @@
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
     <!-- <script  src="./utils/bootstramp/bootstrap.min.js"></script> -->
-    <!-- <script type='module' src="./js/main.js"></script> -->
+    <script type='module' src="./js/main.js"></script>
     <script src="./js/dashboard.js"></script>
 </body>
 
