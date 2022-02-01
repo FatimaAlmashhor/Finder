@@ -12,10 +12,15 @@
     position: fixed;
     width: 100%;
     top: 0px;
+    left: 0px;
     /* background: black; */
     box-shadow: none;
     /* background-color:var( --colors-purple-primary); */
     /* mix-blend-mode: difference; */
+}
+.my-6{
+    margin-top: 7rem;
+    margin-bottom:7rem;
 }
 .bg-purple-primary{
     background: var(--colors-purple-primary);

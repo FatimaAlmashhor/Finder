@@ -13,6 +13,18 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
     <link rel="stylesheet" href="./css/main.css">
     <title>Finder</title>
+    <style>
+        .buble{
+            width: 400px;
+            height:400px;
+            z-index: -1;
+            top : -160px;
+            right:70px;
+            border-radius: 50%;
+        }
+
+    </style>
+
 </head>
 
 <body>
@@ -183,9 +195,10 @@
 
     </header>
 
-    <main class="">
+    <main class="position-relative" >
         <!-- search -->
-        <section class="w-100 d-flex flex-column justify-content-center align-items-center my-5  col-12 col-lg-6">
+        <section class="home-search position-relative w-100 d-flex flex-column justify-content-center align-items-center my-6  col-12 col-lg-6">
+            <div class="buble bg-purple-secondary position-absolute "></div>
             <h1 class="text-black">Start looking for your job.</h1>
             <div class="d-flex justify-content-center h-100 mt-4  col-12 col-lg-6">
                 <div class="search shadow-sm border-gray w-100 row">
@@ -218,7 +231,7 @@
         </section>
 
         <!-- slider -->
-        <div id="myCarousel" class="carousel slide bg-purple-secondary" data-bs-ride="carousel">
+        <div id="myCarousel" class="carousel slide bg-purple-secondary my-6" data-bs-ride="carousel">
             <div class="carousel-indicators ">
                 <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"
                     aria-current="true" aria-label="Slide 1"></button>
