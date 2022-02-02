@@ -18,6 +18,8 @@ $('#more_filter').click(function () {
 })
 $('#all_btn').click(function () {
     $(this).toggleClass('bg-warning')
+    $('.job_post').show();
+    $('.job_post').toggleClass('d-none')
 })
 
 $(document).ready(() => {
@@ -36,13 +38,28 @@ $(document).ready(() => {
                         post.classList.add('d-none');
                     }
                 })
-                // $(".job_post").hide();
-                // $(".job_post").attr(() => {
-                //     console.log($(this));
-                // });
-                // $(".job_type").filter(() => {
-                //     $(this).parent().parent().parent().parent().toggle(element.val === $(this).value)
-                // })
+
+            }
+
+        })
+    })
+
+
+    const checkboxes_campany = document.querySelectorAll("#company_filter input[type='checkbox']")
+    // const job_type = document.querySelectorAll(".job_type")
+    checkboxes_campany.forEach(element => {
+        element.addEventListener('change', (e) => {
+            if (e.target.checked) {
+                job_post.forEach(post => {
+                    let value = post.querySelector(`.compeny_name`).innerText;
+                    if (value.toLowerCase() === e.target.value.toLowerCase()) {
+                        post.classList.remove('d-none');
+                    }
+                    else {
+                        post.classList.add('d-none');
+                    }
+                })
+
             }
 
         })
