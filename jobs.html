@@ -60,9 +60,10 @@
 
     .circle-btns {
       position: relative;
-      height: 50px;
-      width: 100%;
-      overflow-x: hidden;
+      min-height: 50px;
+      width: 60%;
+      /* overflow-x: hidden; */
+      /* overflow-y: auto; */
     }
 
     .filter_body {
@@ -86,7 +87,8 @@
       overflow-x: hidden;
 
     }
-    .dropdown-menu{
+
+    .dropdown-menu {
       z-index: 10000 !important;
     }
   </style>
@@ -192,52 +194,52 @@
                 <div id='more_filter' class="filter_title shadow pointer bg-info mx-auto h-100 px-2 py-3">
                   More Filter
                 </div>
-                <div class="filter_body bg-light  w-0 d-flex  align-items-center">
+                <div class="filter_body bg-light  w-0 d-flex  align-items-center flex-wrap">
                   <!-- fillter all -->
                   <div id='all_btn' class="btn  rounded-pill mx-1">All</div>
                   <!-- type job filter -->
                   <div class="dropdown ">
-                    <button class="btn bg-white border rounded-pill dropdown-toggle" type="button" id="dropdownMenuButton1"
-                      data-bs-toggle="dropdown" aria-expanded="false">
+                    <button class="btn bg-white border rounded-pill dropdown-toggle" type="button"
+                      id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                       Job Type
                     </button>
                     <ul class="dropdown-menu fade" aria-labelledby="dropdownMenuButton1">
-                        <form>
-                          <li class="px-3 py-2">
-                            <input type="checkbox" class="mx-1" style="width: 20px ; height : 20px" />
-                           <label> Full time</label>
-                          </li>
-                          <li class="px-3 py-2">
-                            <input type="checkbox" class="mx-1" style="width: 20px ; height : 20px"  />
-                           <label> Part time</label>
-                          </li>
+                      <form id='job_type_filter'>
+                        <li class="px-3 py-2">
+                          <input type="checkbox" id='fulltime' value='full time' class="mx-1" style="width: 20px ; height : 20px" />
+                          <label for="fulltime"> Full time</label>
+                        </li>
+                        <li class="px-3 py-2">
+                          <input type="checkbox" id='parttime' value='part time' class="mx-1" style="width: 20px ; height : 20px" />
+                          <label  for="parttime"> Part time</label>
+                        </li>
                       </form>
                     </ul>
                   </div>
 
                   <!-- company filter -->
                   <div class="dropdown mx-1">
-                    <button class="btn bg-white border rounded-pill dropdown-toggle" type="button" id="dropdownMenuButton1"
-                      data-bs-toggle="dropdown" aria-expanded="false">
+                    <button class="btn bg-white border rounded-pill dropdown-toggle" type="button"
+                      id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                       Campany
                     </button>
                     <ul class="dropdown-menu fade " aria-labelledby="dropdownMenuButton1">
-                        <form>
-                          <li class="px-1 py-2">
-                            <input type="text" class="mx-1 input-group-lg p-1" placeholder="Campany name.." />
-                          </li>
-                          <li class="px-1 py-2">
-                            <input type="checkbox" class="mx-1" style="width: 20px ; height : 20px" />
-                           <label> Google</label>
-                          </li>
-                          <li class="px-1 py-2">
-                            <input type="checkbox" class="mx-1" style="width: 20px ; height : 20px" />
-                           <label> Google</label>
-                          </li>
-                          <li class="px-1 py-2">
-                            <input type="checkbox" class="mx-1" style="width: 20px ; height : 20px" />
-                           <label> Google</label>
-                          </li>
+                      <form>
+                        <li class="px-1 py-2">
+                          <input type="text" class="mx-1 input-group-lg p-1" placeholder="Campany name.." />
+                        </li>
+                        <li class="px-1 py-2">
+                          <input type="checkbox" class="mx-1" style="width: 20px ; height : 20px" />
+                          <label> Google</label>
+                        </li>
+                        <li class="px-1 py-2">
+                          <input type="checkbox" class="mx-1" style="width: 20px ; height : 20px" />
+                          <label> Google</label>
+                        </li>
+                        <li class="px-1 py-2">
+                          <input type="checkbox" class="mx-1" style="width: 20px ; height : 20px" />
+                          <label> Google</label>
+                        </li>
                       </form>
                     </ul>
                   </div>
