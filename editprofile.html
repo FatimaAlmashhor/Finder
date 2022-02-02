@@ -17,15 +17,28 @@
             transform: translateY(5rem)
         }
 
+        .dashboard-side {
+            background: rgba(var(--bs-light-rgb), var(--bs-bg-opacity));
+        }
+
         .dashboard-side:hover {
-            background: rgb(235, 234, 234);
+            background: rgb(236, 236, 236);
         }
 
         .dashboard-side.active {
-            background: rgb(238, 237, 237);
-            border: 1px solid rgb(206, 190, 190);
+            background: rgb(255, 255, 255);
+            /* border: 1px solid rgb(206, 190, 190); */
             color: black;
             transition: 0.3s;
+        }
+
+        .slid_bar {
+            min-height: 60vh;
+        }
+
+        .slid_bar_section {
+            position: relative;
+            top: 60px;
         }
 
         .profile_page {
@@ -41,18 +54,18 @@
 <body>
     <!-- nav bar -->
 
-    <main>
+    <main class="my-5">
         <div class="">
             <div class=" mx-auto">
                 <!-- Profile widget -->
 
-                <div class="bg-white shadow rounded overflow-hidden ">
+                <div class="bg-white  rounded overflow-hidden ">
 
                     <!-- the information -->
                     <div class="container ">
-                        <div class=" row mx-auto my-3 gx-2 gy-1">
+                        <div class=" row mx-auto my-3 gx-5 gy-1">
 
-                            <!-- here the right side -->
+                            <!-- here the left side -->
                             <div class="col-12 col-lg-4  ">
                                 <div>
                                     <div class="bg-purple-primary w-100">
@@ -74,61 +87,70 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="bg-light p-4 d-flex justify-content-end text-center">
+                                    <div class="  bg-light rounded-top  d-flex justify-content-end text-center">
+                                        <ul class="slid_bar list-inline rounded-top mb-0 my-4 w-100 ">
+                                            <div class="w-100  slid_bar_section">
+                                                <div class='text-black  bg-secondary '>
 
-                                        <ul class="list-inline mb-0 my-4">
-
+                                                    <ul class="side_bar_list list-group mb-3 ">
+                                                        <li data-btn-id='0'
+                                                            class="dashboard-side active list-group-item d-flex justify-content-between lh-condensed pointer">
+                                                            <div class="d-flex">
+                                                                <i class="bi bi-person icon"></i>
+                                                                <div class="mx-2">
+                                                                    <h6 class="my-0 ">
+                                                                        <span> Inforamtion </span></h6>
+                                                                     <small class="text-muted">Name , email ...</small>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li data-btn-id='1'
+                                                            class=" dashboard-side list-group-item d-flex justify-content-between lh-condensed pointer">
+                                                            <div class="d-flex">
+                                                                <i class="bi bi-star  icon"></i>
+                                                                <div class="mx-2">
+                                                                    <h6 class="my-0 ">
+                                                                        Skills </h6>
+                                                                     <small class="text-muted">Drowing , Programming ...</small>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li data-btn-id='2'
+                                                            class=" dashboard-side list-group-item d-flex justify-content-between lh-condensed pointer">
+                                                            <div>
+                                                                <h6 class="my-0">Edit Your Education</h6>
+                                                                <small class="text-muted">High School....</small>
+                                                            </div>
+                                                        </li>
+                                                        <li data-btn-id='3'
+                                                            class=" dashboard-side list-group-item  d-flex justify-content-between  pointer">
+                                                            <div class="">
+                                                                <h6 class="my-0">Edit Your Expirence</h6>
+                                                                <small>Teaching , Training ....</small>
+                                                            </div>
+                                                        </li>
+                                                        <li data-btn-id='3'
+                                                            class=" dashboard-side list-group-item  d-flex justify-content-between  pointer">
+                                                            <div class="">
+                                                                <h6 class="my-0">Edit Your Courses</h6>
+                                                                <small>Teaching , google ....</small>
+                                                            </div>
+                                                        </li>
+                                                        <li
+                                                            class=" dashboard-side list-group-item py-2 d-flex justify-content-between pointer">
+                                                            <span>Login Out</span>
+                                                            <!-- <strong>$20</strong> -->
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
                                         </ul>
                                     </div>
                                 </div>
-                                <div class="p-1 slid_bar_section">
-                                    <div class='text-black  bg-secondary '>
-                                        
-                                        <ul class="side_bar_list list-group mb-3 shadow">
-                                            <li data-btn-id='0'
-                                                class="dashboard-side active list-group-item d-flex justify-content-between lh-condensed pointer">
-                                                <div>
-                                                    <h6 class="my-0">Edit Your Inforamtion</h6>
-                                                    <small class="text-muted">Name , email ...</small>
-                                                </div>
-                                            </li>
-                                            <li data-btn-id='1'
-                                                class=" dashboard-side list-group-item d-flex justify-content-between lh-condensed pointer">
-                                                <div>
-                                                    <h6 class="my-0">Edit Your Skills</h6>
-                                                    <small class="text-muted">Writing, documenting ....</small>
-                                                </div>
-                                            </li>
-                                            <li data-btn-id='2'
-                                                class=" dashboard-side list-group-item d-flex justify-content-between lh-condensed pointer">
-                                                <div>
-                                                    <h6 class="my-0">Edit Your Education</h6>
-                                                    <small class="text-muted">High School....</small>
-                                                </div>
-                                            </li>
-                                            <li data-btn-id='3'
-                                                class=" dashboard-side list-group-item  d-flex justify-content-between  pointer">
-                                                <div class="">
-                                                    <h6 class="my-0">Edit Your Expirence</h6>
-                                                    <small>Teaching , Training ....</small>
-                                                </div>
-                                            </li>
-                                            <li data-btn-id='3'
-                                                class=" dashboard-side list-group-item  d-flex justify-content-between  pointer">
-                                                <div class="">
-                                                    <h6 class="my-0">Edit Your Courses</h6>
-                                                    <small>Teaching , google ....</small>
-                                                </div>
-                                            </li>
-                                            <li
-                                                class=" dashboard-side list-group-item py-2 d-flex justify-content-between pointer">
-                                                <span>Login Out</span>
-                                                <!-- <strong>$20</strong> -->
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
+
                             </div>
+
+                            <!-- right slide -->
                             <div class="col-12 col-lg-8  rounded shadow-sm border-gray">
                                 <div id='about_section' class="profile_page show info_page col-12 px-5 py-3 order-md-1">
                                     <h4 class="mb-3">Add your Information</h4>
@@ -212,9 +234,9 @@
                                                     Please provide a valid state.
                                                 </div>
                                             </div>
-                                            
+
                                         </div>
-                                        
+
                                     </form>
                                 </div>
 
@@ -234,9 +256,8 @@
                                             <div class="icon-hover ">
                                                 <!-- Drop down -->
                                                 <div class="dropdown">
-                                                    <a class="" href="#" role="button"
-                                                        id="dropdownMenuLink" data-bs-toggle="dropdown"
-                                                        aria-expanded="false">
+                                                    <a class="" href="#" role="button" id="dropdownMenuLink"
+                                                        data-bs-toggle="dropdown" aria-expanded="false">
                                                         <i class="bi bi-three-dots-vertical circle-icon"
                                                             style="font-size: 1.2rem;"></i>
                                                     </a>
@@ -324,7 +345,9 @@
                                             <div class=" my-2 pb-3 row">
                                                 <div class="col-3">
                                                     <div class="p-1 border">
-                                                        <img class="w-100" src="./assets/images/electronic-technology-vector-business-logo-template-corporate-identity-abstract-chip-sign-global-network-internet-tech-concept-89970966.jpg" alt="">
+                                                        <img class="w-100"
+                                                            src="./assets/images/electronic-technology-vector-business-logo-template-corporate-identity-abstract-chip-sign-global-network-internet-tech-concept-89970966.jpg"
+                                                            alt="">
                                                     </div>
                                                 </div>
                                                 <div class="col-9 d-flex flex-column justify-content-center">
@@ -339,9 +362,8 @@
                                             <div class="icon-hover ">
                                                 <!-- Drop down -->
                                                 <div class="dropdown">
-                                                    <a class="" href="#" role="button"
-                                                        id="dropdownMenuLink" data-bs-toggle="dropdown"
-                                                        aria-expanded="false">
+                                                    <a class="" href="#" role="button" id="dropdownMenuLink"
+                                                        data-bs-toggle="dropdown" aria-expanded="false">
                                                         <i class="bi bi-three-dots-vertical circle-icon"
                                                             style="font-size: 1.2rem;"></i>
                                                     </a>
@@ -365,7 +387,9 @@
                                             <div class=" my-2 pb-3 row">
                                                 <div class="col-3">
                                                     <div class="p-1 border">
-                                                        <img class="w-100" src="./assets/images/electronic-technology-vector-business-logo-template-corporate-identity-abstract-chip-sign-global-network-internet-tech-concept-89970966.jpg" alt="">
+                                                        <img class="w-100"
+                                                            src="./assets/images/electronic-technology-vector-business-logo-template-corporate-identity-abstract-chip-sign-global-network-internet-tech-concept-89970966.jpg"
+                                                            alt="">
                                                     </div>
                                                 </div>
                                                 <div class="col-9 d-flex flex-column justify-content-center">
@@ -380,9 +404,8 @@
                                             <div class="icon-hover ">
                                                 <!-- Drop down -->
                                                 <div class="dropdown">
-                                                    <a class="" href="#" role="button"
-                                                        id="dropdownMenuLink" data-bs-toggle="dropdown"
-                                                        aria-expanded="false">
+                                                    <a class="" href="#" role="button" id="dropdownMenuLink"
+                                                        data-bs-toggle="dropdown" aria-expanded="false">
                                                         <i class="bi bi-three-dots-vertical circle-icon"
                                                             style="font-size: 1.2rem;"></i>
                                                     </a>
@@ -401,8 +424,8 @@
                                             </div>
                                         </div>
                                     </div>
-                                    
-                                    
+
+
                                 </div>
 
                                 <!-- expeinice page -->
@@ -421,7 +444,7 @@
                                                     class="col-2   text-white text-center p-1 d-flex align-items-center justify-content-center rounded">
                                                     <div class="icon"> <i class="bi bi-reddit text-black"></i> </div>
                                                 </div>
-                                                <div class="col-10 px-3" >
+                                                <div class="col-10 px-3">
                                                     <h5>Software Developer</h5>
                                                     <p>Work in : Payoo</p>
                                                     <small>Here I worked as designer</small>
@@ -432,9 +455,8 @@
                                             <div class="icon-hover ">
                                                 <!-- Drop down -->
                                                 <div class="dropdown">
-                                                    <a class="" href="#" role="button"
-                                                        id="dropdownMenuLink" data-bs-toggle="dropdown"
-                                                        aria-expanded="false">
+                                                    <a class="" href="#" role="button" id="dropdownMenuLink"
+                                                        data-bs-toggle="dropdown" aria-expanded="false">
                                                         <i class="bi bi-three-dots-vertical circle-icon"
                                                             style="font-size: 1.2rem;"></i>
                                                     </a>
@@ -462,7 +484,7 @@
                                                     class="col-2   text-white text-center p-1 d-flex align-items-center justify-content-center rounded">
                                                     <div class="icon"> <i class="bi bi-google text-black"></i> </div>
                                                 </div>
-                                                <div class="col-10 px-3" >
+                                                <div class="col-10 px-3">
                                                     <h5>Software Developer</h5>
                                                     <p>Work in : Payoo</p>
                                                     <small>Here I worked as designer</small>
@@ -473,9 +495,8 @@
                                             <div class="icon-hover ">
                                                 <!-- Drop down -->
                                                 <div class="dropdown">
-                                                    <a class="" href="#" role="button"
-                                                        id="dropdownMenuLink" data-bs-toggle="dropdown"
-                                                        aria-expanded="false">
+                                                    <a class="" href="#" role="button" id="dropdownMenuLink"
+                                                        data-bs-toggle="dropdown" aria-expanded="false">
                                                         <i class="bi bi-three-dots-vertical circle-icon"
                                                             style="font-size: 1.2rem;"></i>
                                                     </a>
@@ -505,7 +526,7 @@
                                             data-bs-target="#add_cource_modal"><i class="bi bi-plus"
                                                 style="font-size: 2rem; color:gray"></i> </div>
                                     </div>
-                                    
+
                                     <!-- cource 1 -->
                                     <div class=" row rounded  position-relative d-flex py-3">
                                         <div class=" col-11 py-3 ">
@@ -519,9 +540,8 @@
                                             <div class="icon-hover ">
                                                 <!-- Drop down -->
                                                 <div class="dropdown">
-                                                    <a class="" href="#" role="button"
-                                                        id="dropdownMenuLink" data-bs-toggle="dropdown"
-                                                        aria-expanded="false">
+                                                    <a class="" href="#" role="button" id="dropdownMenuLink"
+                                                        data-bs-toggle="dropdown" aria-expanded="false">
                                                         <i class="bi bi-three-dots-vertical circle-icon"
                                                             style="font-size: 1.2rem;"></i>
                                                     </a>
@@ -553,9 +573,8 @@
                                             <div class="icon-hover ">
                                                 <!-- Drop down -->
                                                 <div class="dropdown">
-                                                    <a class="" href="#" role="button"
-                                                        id="dropdownMenuLink" data-bs-toggle="dropdown"
-                                                        aria-expanded="false">
+                                                    <a class="" href="#" role="button" id="dropdownMenuLink"
+                                                        data-bs-toggle="dropdown" aria-expanded="false">
                                                         <i class="bi bi-three-dots-vertical circle-icon"
                                                             style="font-size: 1.2rem;"></i>
                                                     </a>
@@ -574,7 +593,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    
+
                                 </div>
                             </div>
                         </div>
@@ -729,7 +748,7 @@
         </div>
     </div>
 
-    
+
     <!-- expirence modals -->
     <div class="modal fade" id="add_expie_modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
@@ -788,14 +807,14 @@
                             <input type="text" class="form-control" id="position_title">
                         </div>
                         <div class="mb-3">
-                            <label for="time_hired" class="col-form-label">Start Time  :</label>
+                            <label for="time_hired" class="col-form-label">Start Time :</label>
                             <input type="date" class="form-control" id="time_hired">
                         </div>
                         <div class="mb-3">
-                            <label for="time_hired" class="col-form-label">Finsh Time  :</label>
+                            <label for="time_hired" class="col-form-label">Finsh Time :</label>
                             <input type="date" class="form-control" id="time_hired">
                         </div>
-                        
+
                         <div class="mb-3">
                             <label for="skill-title" class="col-form-label">Filed title :</label>
                             <input type="date" class="form-control" id="skill-title">
