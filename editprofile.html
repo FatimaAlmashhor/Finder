@@ -54,7 +54,6 @@
 
                             <!-- here the right side -->
                             <div class="col-12 col-lg-4  ">
-                                <!-- top section -->
                                 <div>
                                     <div class="bg-purple-primary w-100">
                                         <div class=" container px-4 pt-0 pb-4 cover">
@@ -213,87 +212,9 @@
                                                     Please provide a valid state.
                                                 </div>
                                             </div>
-                                            <div class="col-md-3 mb-3">
-                                                <label for="zip">Zip</label>
-                                                <input type="text" class="form-control" id="zip" placeholder=""
-                                                    required>
-                                                <div class="invalid-feedback">
-                                                    Zip code required.
-                                                </div>
-                                            </div>
+                                            
                                         </div>
-                                        <hr class="mb-4">
-                                        <div class="custom-control custom-checkbox">
-                                            <input type="checkbox" class="custom-control-input" id="same-address">
-                                            <label class="custom-control-label" for="same-address">Shipping address is
-                                                the same as my billing address</label>
-                                        </div>
-                                        <div class="custom-control custom-checkbox">
-                                            <input type="checkbox" class="custom-control-input" id="save-info">
-                                            <label class="custom-control-label" for="save-info">Save this information
-                                                for next time</label>
-                                        </div>
-                                        <hr class="mb-4">
-
-                                        <h4 class="mb-3">Payment</h4>
-
-                                        <div class="d-block my-3">
-                                            <div class="custom-control custom-radio">
-                                                <input id="credit" name="paymentMethod" type="radio"
-                                                    class="custom-control-input" checked required>
-                                                <label class="custom-control-label" for="credit">Credit card</label>
-                                            </div>
-                                            <div class="custom-control custom-radio">
-                                                <input id="debit" name="paymentMethod" type="radio"
-                                                    class="custom-control-input" required>
-                                                <label class="custom-control-label" for="debit">Debit card</label>
-                                            </div>
-                                            <div class="custom-control custom-radio">
-                                                <input id="paypal" name="paymentMethod" type="radio"
-                                                    class="custom-control-input" required>
-                                                <label class="custom-control-label" for="paypal">Paypal</label>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-md-6 mb-3">
-                                                <label for="cc-name">Name on card</label>
-                                                <input type="text" class="form-control" id="cc-name" placeholder=""
-                                                    required>
-                                                <small class="text-muted">Full name as displayed on card</small>
-                                                <div class="invalid-feedback">
-                                                    Name on card is required
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6 mb-3">
-                                                <label for="cc-number">Credit card number</label>
-                                                <input type="text" class="form-control" id="cc-number" placeholder=""
-                                                    required>
-                                                <div class="invalid-feedback">
-                                                    Credit card number is required
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-md-3 mb-3">
-                                                <label for="cc-expiration">Expiration</label>
-                                                <input type="text" class="form-control" id="cc-expiration"
-                                                    placeholder="" required>
-                                                <div class="invalid-feedback">
-                                                    Expiration date required
-                                                </div>
-                                            </div>
-                                            <div class="col-md-3 mb-3">
-                                                <label for="cc-expiration">CVV</label>
-                                                <input type="text" class="form-control" id="cc-cvv" placeholder=""
-                                                    required>
-                                                <div class="invalid-feedback">
-                                                    Security code required
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <hr class="mb-4">
-                                        <button class="btn btn-primary btn-lg btn-block" type="submit">Continue to
-                                            checkout</button>
+                                        
                                     </form>
                                 </div>
 
@@ -313,7 +234,7 @@
                                             <div class="icon-hover ">
                                                 <!-- Drop down -->
                                                 <div class="dropdown">
-                                                    <a class=" dropdown-toggle" href="#" role="button"
+                                                    <a class="" href="#" role="button"
                                                         id="dropdownMenuLink" data-bs-toggle="dropdown"
                                                         aria-expanded="false">
                                                         <i class="bi bi-three-dots-vertical circle-icon"
@@ -390,12 +311,12 @@
                                     </div>
                                 </div>
 
-                                <!-- third page -->
+                                <!-- education page -->
                                 <div class="profile_page skills_page col-12 px-5 py-3 order-md-1">
                                     <div class="d-flex flex-row justify-content-between">
                                         <h5 class="mb-0 py-2">Educations</h5>
                                         <div id='modal_add_skills' class="pointer icon-hover" data-bs-toggle="modal"
-                                            data-bs-target="#add_skills_modal"><i class="bi bi-plus"
+                                            data-bs-target="#add_educ_modal"><i class="bi bi-plus"
                                                 style="font-size: 2rem; color:gray"></i> </div>
                                     </div>
                                     <div class=" row rounded  position-relative d-flex py-3">
@@ -418,15 +339,21 @@
                                             <div class="icon-hover ">
                                                 <!-- Drop down -->
                                                 <div class="dropdown">
-                                                    <a class=" dropdown-toggle" href="#" role="button"
+                                                    <a class="" href="#" role="button"
                                                         id="dropdownMenuLink" data-bs-toggle="dropdown"
                                                         aria-expanded="false">
                                                         <i class="bi bi-three-dots-vertical circle-icon"
                                                             style="font-size: 1.2rem;"></i>
                                                     </a>
                                                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                                        <li><a class="dropdown-item" href="#">Edit</a></li>
-                                                        <li><a class="dropdown-item" href="#">Delete</a></li>
+                                                        <li>
+                                                            <p class="dropdown-item" data-bs-toggle="modal"
+                                                                data-bs-target="#add_educ_modal">Edit</p>
+                                                        </li>
+                                                        <li>
+                                                            <p class="dropdown-item text-danger" data-bs-toggle="modal"
+                                                                data-bs-target="#delete_modal">Delete</p>
+                                                        </li>
 
                                                     </ul>
                                                 </div>
@@ -453,15 +380,21 @@
                                             <div class="icon-hover ">
                                                 <!-- Drop down -->
                                                 <div class="dropdown">
-                                                    <a class=" dropdown-toggle" href="#" role="button"
+                                                    <a class="" href="#" role="button"
                                                         id="dropdownMenuLink" data-bs-toggle="dropdown"
                                                         aria-expanded="false">
                                                         <i class="bi bi-three-dots-vertical circle-icon"
                                                             style="font-size: 1.2rem;"></i>
                                                     </a>
                                                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                                        <li><a class="dropdown-item" href="#">Edit</a></li>
-                                                        <li><a class="dropdown-item" href="#">Delete</a></li>
+                                                        <li>
+                                                            <p class="dropdown-item" data-bs-toggle="modal"
+                                                                data-bs-target="#add_educ_modal">Edit</p>
+                                                        </li>
+                                                        <li>
+                                                            <p class="dropdown-item text-danger" data-bs-toggle="modal"
+                                                                data-bs-target="#delete_modal">Delete</p>
+                                                        </li>
 
                                                     </ul>
                                                 </div>
@@ -472,22 +405,26 @@
                                     
                                 </div>
 
-                                <!-- fouth page -->
+                                <!-- expeinice page -->
                                 <div class="profile_page skills_page col-12 px-5 py-3 order-md-1">
                                     <div class="d-flex flex-row justify-content-between">
-                                        <h5 class="mb-0 py-2">Educations</h5>
+                                        <h5 class="mb-0 py-2">Experince</h5>
                                         <div id='modal_add_skills' class="pointer icon-hover" data-bs-toggle="modal"
-                                            data-bs-target="#add_skills_modal"><i class="bi bi-plus"
+                                            data-bs-target="#add_expir_modal"><i class="bi bi-plus"
                                                 style="font-size: 2rem; color:gray"></i> </div>
                                     </div>
+                                    <!-- expirence 1 -->
                                     <div class=" row rounded  position-relative d-flex py-3">
                                         <div class="border-bottom col-11 py-3 ">
-                                            <div class=" my-2">
-                                                <div class="d-flex flex-row align-items-center">
-                                                    <div class="icon"> <i class="bi bi-reddit"></i> </div>
-                                                    <div class="ms-2 c-details">
-                                                        <h6 class="mb-0">Reddit</h6> <span>2 days ago</span>
-                                                    </div>
+                                            <div class="row g-2  py-3">
+                                                <div
+                                                    class="col-2   text-white text-center p-1 d-flex align-items-center justify-content-center rounded">
+                                                    <div class="icon"> <i class="bi bi-reddit text-black"></i> </div>
+                                                </div>
+                                                <div class="col-10 px-3" >
+                                                    <h5>Software Developer</h5>
+                                                    <p>Work in : Payoo</p>
+                                                    <small>Here I worked as designer</small>
                                                 </div>
                                             </div>
                                         </div>
@@ -495,29 +432,40 @@
                                             <div class="icon-hover ">
                                                 <!-- Drop down -->
                                                 <div class="dropdown">
-                                                    <a class=" dropdown-toggle" href="#" role="button"
+                                                    <a class="" href="#" role="button"
                                                         id="dropdownMenuLink" data-bs-toggle="dropdown"
                                                         aria-expanded="false">
                                                         <i class="bi bi-three-dots-vertical circle-icon"
                                                             style="font-size: 1.2rem;"></i>
                                                     </a>
                                                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                                        <li><a class="dropdown-item" href="#">Edit</a></li>
-                                                        <li><a class="dropdown-item" href="#">Delete</a></li>
+                                                        <li>
+                                                            <p class="dropdown-item" data-bs-toggle="modal"
+                                                                data-bs-target="#add_expie_modal">Edit</p>
+                                                        </li>
+                                                        <li>
+                                                            <p class="dropdown-item text-danger" data-bs-toggle="modal"
+                                                                data-bs-target="#delete_modal">Delete</p>
+                                                        </li>
 
                                                     </ul>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
+
+                                    <!-- expirence 2 -->
                                     <div class=" row rounded  position-relative d-flex py-3">
                                         <div class="border-bottom col-11 py-3 ">
-                                            <div class=" my-2">
-                                                <div class="d-flex flex-row align-items-center">
-                                                    <div class="icon"> <i class="bi bi-dribbble"></i> </div>
-                                                    <div class="ms-2 c-details">
-                                                        <h6 class="mb-0">Reddit</h6> <span>2 days ago</span>
-                                                    </div>
+                                            <div class="row g-2  py-3">
+                                                <div
+                                                    class="col-2   text-white text-center p-1 d-flex align-items-center justify-content-center rounded">
+                                                    <div class="icon"> <i class="bi bi-google text-black"></i> </div>
+                                                </div>
+                                                <div class="col-10 px-3" >
+                                                    <h5>Software Developer</h5>
+                                                    <p>Work in : Payoo</p>
+                                                    <small>Here I worked as designer</small>
                                                 </div>
                                             </div>
                                         </div>
@@ -525,151 +473,108 @@
                                             <div class="icon-hover ">
                                                 <!-- Drop down -->
                                                 <div class="dropdown">
-                                                    <a class=" dropdown-toggle" href="#" role="button"
+                                                    <a class="" href="#" role="button"
                                                         id="dropdownMenuLink" data-bs-toggle="dropdown"
                                                         aria-expanded="false">
                                                         <i class="bi bi-three-dots-vertical circle-icon"
                                                             style="font-size: 1.2rem;"></i>
                                                     </a>
                                                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                                        <li><a class="dropdown-item" href="#">Edit</a></li>
-                                                        <li><a class="dropdown-item" href="#">Delete</a></li>
+                                                        <li>
+                                                            <p class="dropdown-item" data-bs-toggle="modal"
+                                                                data-bs-target="#add_expie_modal">Edit</p>
+                                                        </li>
+                                                        <li>
+                                                            <p class="dropdown-item text-danger" data-bs-toggle="modal"
+                                                                data-bs-target="#delete_modal">Delete</p>
+                                                        </li>
 
                                                     </ul>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class=" row rounded  position-relative d-flex py-3">
-                                        <div class="border-bottom col-11 py-3 ">
-                                            <div class=" my-2">
-                                                <div class="d-flex flex-row align-items-center">
-                                                    <div class="icon"> <i class="bi bi-linkedin"></i> </div>
-                                                    <div class="ms-2 c-details">
-                                                        <h6 class="mb-0">Linkedin </h6> <span>2 days ago</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class=" edit-icon col-1 col-md-1 pointer flex-row justify-content-end">
-                                            <div class="icon-hover ">
-                                                <!-- Drop down -->
-                                                <div class="dropdown">
-                                                    <a class=" dropdown-toggle" href="#" role="button"
-                                                        id="dropdownMenuLink" data-bs-toggle="dropdown"
-                                                        aria-expanded="false">
-                                                        <i class="bi bi-three-dots-vertical circle-icon"
-                                                            style="font-size: 1.2rem;"></i>
-                                                    </a>
-                                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                                        <li><a class="dropdown-item" href="#">Edit</a></li>
-                                                        <li><a class="dropdown-item" href="#">Delete</a></li>
 
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
                                 </div>
 
-                                <!-- fifth page -->
+                                <!-- cources page -->
                                 <div class="profile_page skills_page col-12 px-5 py-3 order-md-1">
                                     <div class="d-flex flex-row justify-content-between">
-                                        <h5 class="mb-0 py-2">Educations</h5>
+                                        <h5 class="mb-0 py-2">Cources</h5>
                                         <div id='modal_add_skills' class="pointer icon-hover" data-bs-toggle="modal"
-                                            data-bs-target="#add_skills_modal"><i class="bi bi-plus"
+                                            data-bs-target="#add_cource_modal"><i class="bi bi-plus"
                                                 style="font-size: 2rem; color:gray"></i> </div>
                                     </div>
+                                    
+                                    <!-- cource 1 -->
                                     <div class=" row rounded  position-relative d-flex py-3">
-                                        <div class="border-bottom col-11 py-3 ">
-                                            <div class=" my-2">
-                                                <div class="d-flex flex-row align-items-center">
-                                                    <div class="icon"> <i class="bi bi-reddit"></i> </div>
-                                                    <div class="ms-2 c-details">
-                                                        <h6 class="mb-0">Reddit</h6> <span>2 days ago</span>
-                                                    </div>
-                                                </div>
+                                        <div class=" col-11 py-3 ">
+                                            <div class="border-bottom my-2">
+                                                <h6>Google UX</h6>
+                                                <p>In 2020 - present</p>
+                                                <p class="color-gray">Some description here</p>
                                             </div>
                                         </div>
                                         <div class=" edit-icon col-1 col-md-1 pointer flex-row justify-content-end">
                                             <div class="icon-hover ">
                                                 <!-- Drop down -->
                                                 <div class="dropdown">
-                                                    <a class=" dropdown-toggle" href="#" role="button"
+                                                    <a class="" href="#" role="button"
                                                         id="dropdownMenuLink" data-bs-toggle="dropdown"
                                                         aria-expanded="false">
                                                         <i class="bi bi-three-dots-vertical circle-icon"
                                                             style="font-size: 1.2rem;"></i>
                                                     </a>
                                                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                                        <li><a class="dropdown-item" href="#">Edit</a></li>
-                                                        <li><a class="dropdown-item" href="#">Delete</a></li>
+                                                        <li>
+                                                            <p class="dropdown-item" data-bs-toggle="modal"
+                                                                data-bs-target="#add_cource_modal">Edit</p>
+                                                        </li>
+                                                        <li>
+                                                            <p class="dropdown-item text-danger" data-bs-toggle="modal"
+                                                                data-bs-target="#delete_modal">Delete</p>
+                                                        </li>
 
                                                     </ul>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
+                                    <!-- cource 2 -->
                                     <div class=" row rounded  position-relative d-flex py-3">
-                                        <div class="border-bottom col-11 py-3 ">
-                                            <div class=" my-2">
-                                                <div class="d-flex flex-row align-items-center">
-                                                    <div class="icon"> <i class="bi bi-dribbble"></i> </div>
-                                                    <div class="ms-2 c-details">
-                                                        <h6 class="mb-0">Reddit</h6> <span>2 days ago</span>
-                                                    </div>
-                                                </div>
+                                        <div class=" col-11 py-3 ">
+                                            <div class="border-bottom my-2">
+                                                <h6>Google UX</h6>
+                                                <p>In 2020 - present</p>
+                                                <p class="color-gray">Some description here</p>
                                             </div>
                                         </div>
                                         <div class=" edit-icon col-1 col-md-1 pointer flex-row justify-content-end">
                                             <div class="icon-hover ">
                                                 <!-- Drop down -->
                                                 <div class="dropdown">
-                                                    <a class=" dropdown-toggle" href="#" role="button"
+                                                    <a class="" href="#" role="button"
                                                         id="dropdownMenuLink" data-bs-toggle="dropdown"
                                                         aria-expanded="false">
                                                         <i class="bi bi-three-dots-vertical circle-icon"
                                                             style="font-size: 1.2rem;"></i>
                                                     </a>
                                                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                                        <li><a class="dropdown-item" href="#">Edit</a></li>
-                                                        <li><a class="dropdown-item" href="#">Delete</a></li>
+                                                        <li>
+                                                            <p class="dropdown-item" data-bs-toggle="modal"
+                                                                data-bs-target="#add_cource_modal">Edit</p>
+                                                        </li>
+                                                        <li>
+                                                            <p class="dropdown-item text-danger" data-bs-toggle="modal"
+                                                                data-bs-target="#delete_modal">Delete</p>
+                                                        </li>
 
                                                     </ul>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class=" row rounded  position-relative d-flex py-3">
-                                        <div class="border-bottom col-11 py-3 ">
-                                            <div class=" my-2">
-                                                <div class="d-flex flex-row align-items-center">
-                                                    <div class="icon"> <i class="bi bi-linkedin"></i> </div>
-                                                    <div class="ms-2 c-details">
-                                                        <h6 class="mb-0">Linkedin </h6> <span>2 days ago</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class=" edit-icon col-1 col-md-1 pointer flex-row justify-content-end">
-                                            <div class="icon-hover ">
-                                                <!-- Drop down -->
-                                                <div class="dropdown">
-                                                    <a class=" dropdown-toggle" href="#" role="button"
-                                                        id="dropdownMenuLink" data-bs-toggle="dropdown"
-                                                        aria-expanded="false">
-                                                        <i class="bi bi-three-dots-vertical circle-icon"
-                                                            style="font-size: 1.2rem;"></i>
-                                                    </a>
-                                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                                        <li><a class="dropdown-item" href="#">Edit</a></li>
-                                                        <li><a class="dropdown-item" href="#">Delete</a></li>
-
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                                    
                                 </div>
                             </div>
                         </div>
@@ -789,6 +694,128 @@
             </div>
         </div>
     </div>
+
+    <!-- cource modals -->
+    <div class="modal fade" id="add_cource_modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Expirence</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Add new skill.</p>
+                    <form>
+                        <div class="mb-3">
+                            <label for="skill-title" class="col-form-label">Cource Title:</label>
+                            <input type="text" class="form-control" id="skill-title">
+                        </div>
+                        <div class="mb-3">
+                            <label for="skill-title" class="col-form-label">Date :</label>
+                            <input type="date" class="form-control" id="skill-title">
+                        </div>
+                        <div class="mb-3">
+                            <label for="skill-title" class="col-form-label">More Description :</label>
+                            <textarea type="text" class="form-control" id="skill-title"></textarea>
+                        </div>
+
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <!-- expirence modals -->
+    <div class="modal fade" id="add_expie_modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Education</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Add new skill.</p>
+                    <form>
+                        <div class="mb-3">
+                            <label for="position_title" class="col-form-label">Position Title:</label>
+                            <input type="text" class="form-control" id="position_title">
+                        </div>
+                        <div class="mb-3">
+                            <label for="time_hired" class="col-form-label">Time Hired :</label>
+                            <input type="date" class="form-control" id="time_hired">
+                        </div>
+                        <div class="mb-3 form-check-inline">
+                            <input type="checkbox" class="" id="precent">
+                            <label for="precent" class="">Precent :</label>
+                        </div>
+                        <div class="mb-3">
+                            <label for="skill-title" class="col-form-label">Campany Name :</label>
+                            <input type="date" class="form-control" id="skill-title">
+                        </div>
+                        <div class="mb-3">
+                            <label for="skill-title" class="col-form-label">More Description :</label>
+                            <textarea type="text" class="form-control" id="skill-title"></textarea>
+                        </div>
+
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- educ modals -->
+    <div class="modal fade" id="add_educ_modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Adding New Skill</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Add new skill.</p>
+                    <form>
+                        <div class="mb-3">
+                            <label for="position_title" class="col-form-label">Place Name:</label>
+                            <input type="text" class="form-control" id="position_title">
+                        </div>
+                        <div class="mb-3">
+                            <label for="time_hired" class="col-form-label">Start Time  :</label>
+                            <input type="date" class="form-control" id="time_hired">
+                        </div>
+                        <div class="mb-3">
+                            <label for="time_hired" class="col-form-label">Finsh Time  :</label>
+                            <input type="date" class="form-control" id="time_hired">
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label for="skill-title" class="col-form-label">Filed title :</label>
+                            <input type="date" class="form-control" id="skill-title">
+                        </div>
+                        <div class="mb-3">
+                            <label for="skill-title" class="col-form-label">More Description :</label>
+                            <textarea type="text" class="form-control" id="skill-title"></textarea>
+                        </div>
+
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
     <div class="modal fade" id="delete_modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
