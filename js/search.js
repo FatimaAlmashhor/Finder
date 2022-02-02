@@ -12,3 +12,10 @@ $('#where_search').on('keyup', function () {
         $(this).parent().parent().parent().parent().toggle($(this).text().toLowerCase().indexOf(word) > -1);
     })
 })
+
+$('#more_filter').click(function () {
+    $('.filter_body').toggleClass('w-0')
+})
+$('#all_btn').click(function () {
+    $(this).toggleClass('bg-warning')
+})

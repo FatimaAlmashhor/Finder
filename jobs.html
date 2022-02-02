@@ -57,6 +57,38 @@
       transition: 200ms;
       cursor: pointer;
     }
+
+    .circle-btns {
+      position: relative;
+      height: 50px;
+      width: 100%;
+      overflow-x: hidden;
+    }
+
+    .filter_body {
+      position: absolute;
+      left: 130px;
+      width: 100%;
+      height: inherit;
+      transition: 0.3s;
+    }
+
+    .filter_title {
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      width: 120px;
+    }
+
+    .w-0 {
+      position: absolute;
+      width: 0%;
+      overflow-x: hidden;
+
+    }
+    .dropdown-menu{
+      z-index: 10000 !important;
+    }
   </style>
 </head>
 
@@ -110,15 +142,14 @@
             <div class="col-12 col-lg-7">
               <div class="form  ">
                 <i class="fa fa-search"></i>
-                <input id='what_search' type="text" class="form-control form-input" placeholder="What ?"> <span class="left-pan"><i
-                    class="bi bi-search"></i></span>
+                <input id='what_search' type="text" class="form-control form-input" placeholder="What ?"> <span
+                  class="left-pan"><i class="bi bi-search"></i></span>
               </div>
             </div>
             <div class="col-12 col-lg-3 ">
-              <div class="form"> <i class="fa fa-search"></i> <input 
-                id='where_search'
-                type="text" class="form-control form-input"
-                  placeholder="Where ?"> <span class="left-pan"><i class="bi bi-geo-alt"></i></span> </div>
+              <div class="form"> <i class="fa fa-search"></i> <input id='where_search' type="text"
+                  class="form-control form-input" placeholder="Where ?"> <span class="left-pan"><i
+                    class="bi bi-geo-alt"></i></span> </div>
             </div>
             <div class=" col-3 col-lg-2">
               <button class="btn bg-primary text-white py-2 px-4">Find</button>
@@ -146,19 +177,6 @@
               </div>
             </div>
           </div>
-          
-
-<!-- <div class="dropdown">
-  <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-    Dropdown link
-  </a>
-
-  <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-    <li><a class="dropdown-item" href="#">Action</a></li>
-    <li><a class="dropdown-item" href="#">Another action</a></li>
-    <li><a class="dropdown-item" href="#">Something else here</a></li>
-  </ul>
-</div> -->
         </div>
       </div>
     </div>
@@ -167,16 +185,81 @@
     <section>
       <div class="container ">
         <div class="row w-full d-flex flex-row gx-3">
+          <div class="col-12 container">
+            <!-- More filter  -->
+            <div class="more_filter ">
+              <div class="d-flex flex-row circle-btns align-items-center">
+                <div id='more_filter' class="filter_title shadow pointer bg-info mx-auto h-100 px-2 py-3">
+                  More Filter
+                </div>
+                <div class="filter_body bg-light  w-0 d-flex  align-items-center">
+                  <!-- fillter all -->
+                  <div id='all_btn' class="btn  rounded-pill mx-1">All</div>
+                  <!-- type job filter -->
+                  <div class="dropdown ">
+                    <button class="btn bg-white border rounded-pill dropdown-toggle" type="button" id="dropdownMenuButton1"
+                      data-bs-toggle="dropdown" aria-expanded="false">
+                      Job Type
+                    </button>
+                    <ul class="dropdown-menu fade" aria-labelledby="dropdownMenuButton1">
+                        <form>
+                          <li class="px-3 py-2">
+                            <input type="checkbox" class="mx-1" style="width: 20px ; height : 20px" />
+                           <label> Full time</label>
+                          </li>
+                          <li class="px-3 py-2">
+                            <input type="checkbox" class="mx-1" style="width: 20px ; height : 20px"  />
+                           <label> Part time</label>
+                          </li>
+                      </form>
+                    </ul>
+                  </div>
+
+                  <!-- company filter -->
+                  <div class="dropdown mx-1">
+                    <button class="btn bg-white border rounded-pill dropdown-toggle" type="button" id="dropdownMenuButton1"
+                      data-bs-toggle="dropdown" aria-expanded="false">
+                      Campany
+                    </button>
+                    <ul class="dropdown-menu fade " aria-labelledby="dropdownMenuButton1">
+                        <form>
+                          <li class="px-1 py-2">
+                            <input type="text" class="mx-1 input-group-lg p-1" placeholder="Campany name.." />
+                          </li>
+                          <li class="px-1 py-2">
+                            <input type="checkbox" class="mx-1" style="width: 20px ; height : 20px" />
+                           <label> Google</label>
+                          </li>
+                          <li class="px-1 py-2">
+                            <input type="checkbox" class="mx-1" style="width: 20px ; height : 20px" />
+                           <label> Google</label>
+                          </li>
+                          <li class="px-1 py-2">
+                            <input type="checkbox" class="mx-1" style="width: 20px ; height : 20px" />
+                           <label> Google</label>
+                          </li>
+                      </form>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
           <div class=" col-12 col-lg-5  ">
 
             <!-- left slide -->
             <div class=" d-flex w-100 flex-column">
+
               <!-- first Item -->
               <div class="job_post card text-black p-3 mb-2">
                 <div class="d-flex justify-content-between pointer">
 
-                  <div  >
-                    <a href='./jobdetails.html' class="text-black"><h3 class="heading job_title">Software Architect</h3></a>
+                  <div>
+                    <a href='./jobdetails.html' class="text-black">
+                      <h3 class="heading job_title">Software Architect</h3>
+                    </a>
                     <p class="m-0 p-1 text-black compeny_name">Riddle </p>
                     <!-- location and remote  -->
                     <div class="d-flex flex-row align-items-center">
@@ -215,11 +298,15 @@
                   </div>
                 </div>
               </div>
+
+              <!-- second item -->
               <div class="job_post card text-black p-3 mb-2">
                 <div class="d-flex justify-content-between pointer">
 
-                  <div  >
-                    <a href='./jobdetails.html' class="text-black"><h3 class="heading job_title">Project Manger</h3></a>
+                  <div>
+                    <a href='./jobdetails.html' class="text-black">
+                      <h3 class="heading job_title">Project Manger</h3>
+                    </a>
                     <p class="m-0 p-1 text-black compeny_name">Facebook </p>
                     <!-- location and remote  -->
                     <div class="d-flex flex-row align-items-center">
@@ -258,10 +345,14 @@
                   </div>
                 </div>
               </div>
+
+              <!-- thired item -->
               <div class="job_post card text-black p-3 mb-2">
                 <div class="d-flex justify-content-between pointer">
-                  <div  >
-                    <a href='./jobdetails.html' class="text-black"><h3 class="heading job_title">Software Engneer</h3></a>
+                  <div>
+                    <a href='./jobdetails.html' class="text-black">
+                      <h3 class="heading job_title">Software Engneer</h3>
+                    </a>
                     <p class="m-0 p-1 text-black compeny_name">Apple </p>
                     <!-- location and remote  -->
                     <div class="d-flex flex-row align-items-center">
@@ -300,11 +391,15 @@
                   </div>
                 </div>
               </div>
+
+              <!-- forth item -->
               <div class="job_post card text-black p-3 mb-2">
                 <div class="d-flex justify-content-between pointer">
 
-                  <div  >
-                    <a href='./jobdetails.html' class="text-black"><h3 class="heading job_title">Software Architect</h3></a>
+                  <div>
+                    <a href='./jobdetails.html' class="text-black">
+                      <h3 class="heading job_title">Software Architect</h3>
+                    </a>
                     <p class="m-0 p-1 text-black compeny_name">Riddle </p>
                     <!-- location and remote  -->
                     <div class="d-flex flex-row align-items-center">
@@ -343,7 +438,7 @@
                   </div>
                 </div>
               </div>
-             
+
             </div>
           </div>
 
