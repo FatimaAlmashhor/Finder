@@ -47,43 +47,45 @@
                 <!-- Profile widget -->
 
                 <div class="bg-white shadow rounded overflow-hidden ">
-                    
 
                     <!-- the information -->
                     <div class="container ">
                         <div class=" row mx-auto my-3 gx-2 gy-1">
-                           
+
                             <!-- here the right side -->
                             <div class="col-12 col-lg-4  ">
-                                 <!-- top section -->
-                            <div>
-                                <div class="bg-purple-primary w-100">
-                                    <div class=" container px-4 pt-0 pb-4 cover">
-                                        
-                                        <div class="media d-flex flex-row align-items-end profile-head">
-                                            <div class="profile mr-3 d-flex flex-column"><img
-                                                    src="https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80"
-                                                    alt="..." width="130" class="rounded mb-2 img-thumbnail"><a
-                                                    href="./profile.html" class="btn btn-outline-dark btn-sm btn-block">View your
-                                                    profile</a></div>
-            
-                                            <div class="media-body mb-5 text-white mx-2">
-                                                <h4 class="mt-0 mb-0">Mark Williams</h4>
-                                                <p class="small mb-4"> <i class="fas fa-map-marker-alt mr-2"></i>New York</p>
+                                <!-- top section -->
+                                <div>
+                                    <div class="bg-purple-primary w-100">
+                                        <div class=" container px-4 pt-0 pb-4 cover">
+
+                                            <div class="media d-flex flex-row align-items-end profile-head">
+                                                <div class="profile mr-3 d-flex flex-column"><img
+                                                        src="https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80"
+                                                        alt="..." width="130" class="rounded mb-2 img-thumbnail"><a
+                                                        href="./profile.html"
+                                                        class="btn btn-outline-dark btn-sm btn-block">View your
+                                                        profile</a></div>
+
+                                                <div class="media-body mb-5 text-white mx-2">
+                                                    <h4 class="mt-0 mb-0">Mark Williams</h4>
+                                                    <p class="small mb-4"> <i class="fas fa-map-marker-alt mr-2"></i>New
+                                                        York</p>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
+                                    <div class="bg-light p-4 d-flex justify-content-end text-center">
+
+                                        <ul class="list-inline mb-0 my-4">
+
+                                        </ul>
+                                    </div>
                                 </div>
-                                <div class="bg-light p-4 d-flex justify-content-end text-center">
-            
-                                    <ul class="list-inline mb-0 my-4">
+                                <div class="p-1 slid_bar_section">
+                                    <div class='text-black  bg-secondary '>
                                         
-                                    </ul>
-                                </div>
-                            </div>
-                                <div class="p-1 ">
-                                    <div class='text-black  bg-secondary rounded'>
-                                        <ul class="list-group mb-3 shadow-sm">
+                                        <ul class="side_bar_list list-group mb-3 shadow">
                                             <li data-btn-id='0'
                                                 class="dashboard-side active list-group-item d-flex justify-content-between lh-condensed pointer">
                                                 <div>
@@ -107,7 +109,14 @@
                                             </li>
                                             <li data-btn-id='3'
                                                 class=" dashboard-side list-group-item  d-flex justify-content-between  pointer">
-                                                <div class="text-success">
+                                                <div class="">
+                                                    <h6 class="my-0">Edit Your Expirence</h6>
+                                                    <small>Teaching , Training ....</small>
+                                                </div>
+                                            </li>
+                                            <li data-btn-id='3'
+                                                class=" dashboard-side list-group-item  d-flex justify-content-between  pointer">
+                                                <div class="">
                                                     <h6 class="my-0">Edit Your Courses</h6>
                                                     <small>Teaching , google ....</small>
                                                 </div>
@@ -312,11 +321,13 @@
                                                     </a>
                                                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
                                                         <li>
-                                                            <p class="dropdown-item"  data-bs-toggle="modal"
-                                                            data-bs-target="#add_skills_modal">Edit</p>
+                                                            <p class="dropdown-item" data-bs-toggle="modal"
+                                                                data-bs-target="#add_skills_modal">Edit</p>
                                                         </li>
-                                                        <li><p class="dropdown-item text-danger"  data-bs-toggle="modal"
-                                                            data-bs-target="#delete_modal">Delete</p></li>
+                                                        <li>
+                                                            <p class="dropdown-item text-danger" data-bs-toggle="modal"
+                                                                data-bs-target="#delete_modal">Delete</p>
+                                                        </li>
 
                                                     </ul>
                                                 </div>
@@ -338,10 +349,14 @@
                                                             style="font-size: 1.2rem;"></i>
                                                     </a>
                                                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                                        <li><p class="dropdown-item"  data-bs-toggle="modal"
-                                                        data-bs-target="#add_skills_modal">Edit</p></li>
-                                                        <li><p class="dropdown-item text-danger"  data-bs-toggle="modal"
-                                                        data-bs-target="#delete_modal">Delete</p></li>
+                                                        <li>
+                                                            <p class="dropdown-item" data-bs-toggle="modal"
+                                                                data-bs-target="#add_skills_modal">Edit</p>
+                                                        </li>
+                                                        <li>
+                                                            <p class="dropdown-item text-danger" data-bs-toggle="modal"
+                                                                data-bs-target="#delete_modal">Delete</p>
+                                                        </li>
                                                     </ul>
                                                 </div>
                                             </div>
@@ -362,10 +377,12 @@
                                                             style="font-size: 1.2rem;"></i>
                                                     </a>
                                                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                                        <p class="dropdown-item"  data-bs-toggle="modal"
+                                                        <p class="dropdown-item" data-bs-toggle="modal"
                                                             data-bs-target="#add_skills_modal">Edit</p>
-                                                            <li><p class="dropdown-item text-danger"  data-bs-toggle="modal"
-                                                                data-bs-target="#delete_modal">Delete</p></li>
+                                                        <li>
+                                                            <p class="dropdown-item text-danger" data-bs-toggle="modal"
+                                                                data-bs-target="#delete_modal">Delete</p>
+                                                        </li>
                                                     </ul>
                                                 </div>
                                             </div>
@@ -411,7 +428,14 @@
                                     </div>
                                     <div class=" row rounded  position-relative d-flex py-3">
                                         <div class="border-bottom col-11 py-3 ">
-                                            <p class="font-italic mb-0 ">Web Developer</p>
+                                            <div class=" my-2">
+                                                <div class="d-flex flex-row align-items-center">
+                                                    <div class="icon"> <i class="bi bi-dribbble"></i> </div>
+                                                    <div class="ms-2 c-details">
+                                                        <h6 class="mb-0">Reddit</h6> <span>2 days ago</span>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                         <div class=" edit-icon col-1 col-md-1 pointer flex-row justify-content-end">
                                             <div class="icon-hover ">
@@ -434,7 +458,113 @@
                                     </div>
                                     <div class=" row rounded  position-relative d-flex py-3">
                                         <div class="border-bottom col-11 py-3 ">
-                                            <p class="font-italic mb-0 ">Web Developer</p>
+                                            <div class=" my-2">
+                                                <div class="d-flex flex-row align-items-center">
+                                                    <div class="icon"> <i class="bi bi-linkedin"></i> </div>
+                                                    <div class="ms-2 c-details">
+                                                        <h6 class="mb-0">Linkedin </h6> <span>2 days ago</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class=" edit-icon col-1 col-md-1 pointer flex-row justify-content-end">
+                                            <div class="icon-hover ">
+                                                <!-- Drop down -->
+                                                <div class="dropdown">
+                                                    <a class=" dropdown-toggle" href="#" role="button"
+                                                        id="dropdownMenuLink" data-bs-toggle="dropdown"
+                                                        aria-expanded="false">
+                                                        <i class="bi bi-three-dots-vertical circle-icon"
+                                                            style="font-size: 1.2rem;"></i>
+                                                    </a>
+                                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                                        <li><a class="dropdown-item" href="#">Edit</a></li>
+                                                        <li><a class="dropdown-item" href="#">Delete</a></li>
+
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                <div class="profile_page skills_page col-12 px-5 py-3 order-md-1">
+                                    <div class="d-flex flex-row justify-content-between">
+                                        <h5 class="mb-0 py-2">Educations</h5>
+                                        <div id='modal_add_skills' class="pointer icon-hover" data-bs-toggle="modal"
+                                            data-bs-target="#add_skills_modal"><i class="bi bi-plus"
+                                                style="font-size: 2rem; color:gray"></i> </div>
+                                    </div>
+                                    <div class=" row rounded  position-relative d-flex py-3">
+                                        <div class="border-bottom col-11 py-3 ">
+                                            <div class=" my-2">
+                                                <div class="d-flex flex-row align-items-center">
+                                                    <div class="icon"> <i class="bi bi-reddit"></i> </div>
+                                                    <div class="ms-2 c-details">
+                                                        <h6 class="mb-0">Reddit</h6> <span>2 days ago</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class=" edit-icon col-1 col-md-1 pointer flex-row justify-content-end">
+                                            <div class="icon-hover ">
+                                                <!-- Drop down -->
+                                                <div class="dropdown">
+                                                    <a class=" dropdown-toggle" href="#" role="button"
+                                                        id="dropdownMenuLink" data-bs-toggle="dropdown"
+                                                        aria-expanded="false">
+                                                        <i class="bi bi-three-dots-vertical circle-icon"
+                                                            style="font-size: 1.2rem;"></i>
+                                                    </a>
+                                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                                        <li><a class="dropdown-item" href="#">Edit</a></li>
+                                                        <li><a class="dropdown-item" href="#">Delete</a></li>
+
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class=" row rounded  position-relative d-flex py-3">
+                                        <div class="border-bottom col-11 py-3 ">
+                                            <div class=" my-2">
+                                                <div class="d-flex flex-row align-items-center">
+                                                    <div class="icon"> <i class="bi bi-dribbble"></i> </div>
+                                                    <div class="ms-2 c-details">
+                                                        <h6 class="mb-0">Reddit</h6> <span>2 days ago</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class=" edit-icon col-1 col-md-1 pointer flex-row justify-content-end">
+                                            <div class="icon-hover ">
+                                                <!-- Drop down -->
+                                                <div class="dropdown">
+                                                    <a class=" dropdown-toggle" href="#" role="button"
+                                                        id="dropdownMenuLink" data-bs-toggle="dropdown"
+                                                        aria-expanded="false">
+                                                        <i class="bi bi-three-dots-vertical circle-icon"
+                                                            style="font-size: 1.2rem;"></i>
+                                                    </a>
+                                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                                        <li><a class="dropdown-item" href="#">Edit</a></li>
+                                                        <li><a class="dropdown-item" href="#">Delete</a></li>
+
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class=" row rounded  position-relative d-flex py-3">
+                                        <div class="border-bottom col-11 py-3 ">
+                                            <div class=" my-2">
+                                                <div class="d-flex flex-row align-items-center">
+                                                    <div class="icon"> <i class="bi bi-linkedin"></i> </div>
+                                                    <div class="ms-2 c-details">
+                                                        <h6 class="mb-0">Linkedin </h6> <span>2 days ago</span>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                         <div class=" edit-icon col-1 col-md-1 pointer flex-row justify-content-end">
                                             <div class="icon-hover ">
@@ -457,7 +587,102 @@
                                     </div>
                                 </div>
                                 <div class="profile_page skills_page col-12 px-5 py-3 order-md-1">
-                                    Test 4
+                                    <div class="d-flex flex-row justify-content-between">
+                                        <h5 class="mb-0 py-2">Educations</h5>
+                                        <div id='modal_add_skills' class="pointer icon-hover" data-bs-toggle="modal"
+                                            data-bs-target="#add_skills_modal"><i class="bi bi-plus"
+                                                style="font-size: 2rem; color:gray"></i> </div>
+                                    </div>
+                                    <div class=" row rounded  position-relative d-flex py-3">
+                                        <div class="border-bottom col-11 py-3 ">
+                                            <div class=" my-2">
+                                                <div class="d-flex flex-row align-items-center">
+                                                    <div class="icon"> <i class="bi bi-reddit"></i> </div>
+                                                    <div class="ms-2 c-details">
+                                                        <h6 class="mb-0">Reddit</h6> <span>2 days ago</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class=" edit-icon col-1 col-md-1 pointer flex-row justify-content-end">
+                                            <div class="icon-hover ">
+                                                <!-- Drop down -->
+                                                <div class="dropdown">
+                                                    <a class=" dropdown-toggle" href="#" role="button"
+                                                        id="dropdownMenuLink" data-bs-toggle="dropdown"
+                                                        aria-expanded="false">
+                                                        <i class="bi bi-three-dots-vertical circle-icon"
+                                                            style="font-size: 1.2rem;"></i>
+                                                    </a>
+                                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                                        <li><a class="dropdown-item" href="#">Edit</a></li>
+                                                        <li><a class="dropdown-item" href="#">Delete</a></li>
+
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class=" row rounded  position-relative d-flex py-3">
+                                        <div class="border-bottom col-11 py-3 ">
+                                            <div class=" my-2">
+                                                <div class="d-flex flex-row align-items-center">
+                                                    <div class="icon"> <i class="bi bi-dribbble"></i> </div>
+                                                    <div class="ms-2 c-details">
+                                                        <h6 class="mb-0">Reddit</h6> <span>2 days ago</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class=" edit-icon col-1 col-md-1 pointer flex-row justify-content-end">
+                                            <div class="icon-hover ">
+                                                <!-- Drop down -->
+                                                <div class="dropdown">
+                                                    <a class=" dropdown-toggle" href="#" role="button"
+                                                        id="dropdownMenuLink" data-bs-toggle="dropdown"
+                                                        aria-expanded="false">
+                                                        <i class="bi bi-three-dots-vertical circle-icon"
+                                                            style="font-size: 1.2rem;"></i>
+                                                    </a>
+                                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                                        <li><a class="dropdown-item" href="#">Edit</a></li>
+                                                        <li><a class="dropdown-item" href="#">Delete</a></li>
+
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class=" row rounded  position-relative d-flex py-3">
+                                        <div class="border-bottom col-11 py-3 ">
+                                            <div class=" my-2">
+                                                <div class="d-flex flex-row align-items-center">
+                                                    <div class="icon"> <i class="bi bi-linkedin"></i> </div>
+                                                    <div class="ms-2 c-details">
+                                                        <h6 class="mb-0">Linkedin </h6> <span>2 days ago</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class=" edit-icon col-1 col-md-1 pointer flex-row justify-content-end">
+                                            <div class="icon-hover ">
+                                                <!-- Drop down -->
+                                                <div class="dropdown">
+                                                    <a class=" dropdown-toggle" href="#" role="button"
+                                                        id="dropdownMenuLink" data-bs-toggle="dropdown"
+                                                        aria-expanded="false">
+                                                        <i class="bi bi-three-dots-vertical circle-icon"
+                                                            style="font-size: 1.2rem;"></i>
+                                                    </a>
+                                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                                        <li><a class="dropdown-item" href="#">Edit</a></li>
+                                                        <li><a class="dropdown-item" href="#">Delete</a></li>
+
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -564,11 +789,11 @@
                     <p>Add new skill.</p>
                     <form>
                         <div class="mb-3">
-                          <label for="skill-title" class="col-form-label">Skill:</label>
-                          <input type="text" class="form-control" id="skill-title">
+                            <label for="skill-title" class="col-form-label">Skill:</label>
+                            <input type="text" class="form-control" id="skill-title">
                         </div>
-                        
-                      </form>
+
+                    </form>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
