@@ -7,6 +7,10 @@ main {
     border-radius: 10px ;
  border: 1px solid #eee; 
 }
+.card-hover:hover{
+    box-shadow: none;
+    transition: all 0.4s;
+}
 
 .c-details span {
     font-weight: 300;
