@@ -12,6 +12,12 @@ $('#where_search').on('keyup', function () {
         $(this).parent().parent().parent().parent().toggle($(this).text().toLowerCase().indexOf(word) > -1);
     })
 })
+$('#search_company').on('keyup', function () {
+    let word = $('#search_company').val().toLowerCase();
+    $('.compeny_name').filter(function () {
+        $(this).parent().parent().parent().toggle($(this).text().toLowerCase().indexOf(word) > -1);
+    })
+})
 
 $('#more_filter').click(function () {
     $('.filter_body').toggleClass('w-0')
@@ -40,6 +46,9 @@ $(document).ready(() => {
                 })
 
             }
+            else {
+                job_post.forEach(e => e.classList.remove('d-none'))
+            }
 
         })
     })
@@ -60,6 +69,9 @@ $(document).ready(() => {
                     }
                 })
 
+            }
+            else {
+                job_post.forEach(e => e.classList.remove('d-none'))
             }
 
         })
