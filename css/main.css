@@ -91,3 +91,56 @@
     border-radius: 50%;
     background-color: rgb(54, 207, 54);
 }
+
+.btn-bordre{
+    position: relative;
+    background-color: transparent;
+    color : white ;
+    border: 1px solid white;
+    overflow: hidden;
+    z-index: 2;
+}
+.btn-bordre::after{
+position: absolute;
+content: '' ;
+height: 100%;
+width: 0%;
+color: black;
+top: 0px ;
+left:0px;
+z-index: -1;
+background-color: white;
+transition: width 0.3s ;
+}
+.btn-bordre:hover::after{
+   width: 100%;
+}
+.bg-animation {
+    /* width: 100%; */
+    /* height: 100vh; */
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: center; */
+    background-size: 300% 300%;
+    background-image: linear-gradient(45deg,
+            rgb(70, 181, 233) 0%,
+            rgb(30, 110, 148) 10%,
+            rgb(69, 92, 207) 45%,
+            rgb(25, 41, 126) 71%,
+            rgb(59, 5, 25) 100%);
+    animation: AnimateBG 14s ease infinite;
+}
+
+@keyframes AnimateBG {
+    0% {
+        background-position: 0% 50%
+    }
+
+    50% {
+        background-position: 100% 50%
+    }
+
+    100% {
+        background-position: 0% 50%
+    }
+}

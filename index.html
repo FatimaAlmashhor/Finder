@@ -14,15 +14,19 @@
     <link rel="stylesheet" href="./css/main.css">
     <title>Finder</title>
     <style>
-        .buble{
+        .buble {
             width: 400px;
-            height:400px;
+            height: 400px;
             z-index: -1;
-            top : -160px;
-            right:70px;
+            top: -160px;
+            right: 70px;
             border-radius: 50%;
         }
 
+        .parners {
+            position: relative;
+            bottom: -100px;
+        }
     </style>
 
 </head>
@@ -30,7 +34,7 @@
 <body>
     <!-- nav bar -->
 
-    <header class=" bg-purple-primary header" style="position: relative;">
+    <header class="bg-animation  header" style="position: relative;">
         <nav class="navbar navbar-expand-md text-white w-100   d-flex flex-row ">
             <div class="container-fluid  container-lg ">
                 <a class="navbar-brand font-lg text-white" href="./index.html">Finder</a>
@@ -76,9 +80,10 @@
                 <div
                     class="col-lg-6 col-12 d-flex flex-column  justify-content-center align-items-start mt-5  align-self-center  h-100">
                     <h1 class="color-white Light font-xxxl">Finder</h1>
-                    <p class="color-white">One place to find your dream</p>
-                    <button class="btn bg-purple-secondary  text-black border-white py-2 px-4"
-                        style="width: fit-content;">Get Started</button>
+                    <p class="color-white">One place to find your dream Your can explor the world in simple steps </p>
+                    <small class="text-light mt-0 py-0 mb-4 ">Take look start by clicking on the Start button</small>
+                    <button class="btn btn-bordre bg-purple-secondary  py-2 px-4" style="width: fit-content;">Get
+                        Started</button>
                 </div>
                 <div class="col-6 d-none d-lg-flex">
                     <div class="infint_slider__vertical d-flex flex-row ">
@@ -196,9 +201,10 @@
 
     </header>
 
-    <main class="position-relative" >
+    <main class="position-relative">
         <!-- search -->
-        <section class="home-search position-relative w-100 d-flex flex-column justify-content-center align-items-center my-6  col-12 col-lg-6">
+        <section
+            class="home-search position-relative w-100 d-flex flex-column justify-content-center align-items-center my-6  col-12 col-lg-6">
             <div class="buble bg-purple-secondary position-absolute "></div>
             <h1 class="text-black">Start looking for your job.</h1>
             <div class="d-flex justify-content-center h-100 mt-4  col-12 col-lg-6">
@@ -292,7 +298,10 @@
         </div>
         <!-- the common postes -->
         <section class="w-100 container-lg my-5">
-            <h1 class=" py-2 text-center">Big Company Hiring Now </h1>
+            <div class="d-flex flex-column align-items-center">
+                <h1 class=" py-2 text-center">Big Company Hiring Now </h1>
+                <p class="color-gray">Your dearm start from here</p>
+            </div>
             <div class="container mt-5 mb-3">
                 <div class="row">
                     <div class="col-md-4">
@@ -373,7 +382,10 @@
 
         <!-- our companies -->
         <section class=" w-100 my-5 d-flex flex-column justify-content-center align-items-center ">
-            <h1 class="my-5">Our partners</h1>
+            <div class="parners d-flex flex-column align-items-center ">
+                <h1 class="mt-5 ">Our partners</h1>
+                <p class="color-gray">Trust and fath of us is what make this happen</p>
+            </div>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
                 <path fill="#302866" fill-opacity="1"
                     d="M0,288L80,288C160,288,320,288,480,277.3C640,267,800,245,960,234.7C1120,224,1280,224,1360,224L1440,224L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z">
@@ -386,7 +398,8 @@
                     height: 100px;">
                         <div class="card" style="width: inherit; height: inherit;">
                             <div class="card-body d-flex flex-column justify-content-center align-items-center mx-auto">
-                                <i class="bi bi-alarm" style="font-size: 2rem; color:brown"></i>
+                                <img class='w-100'
+                                    src='./assets/images/electronic-technology-vector-business-logo-template-corporate-identity-abstract-chip-sign-global-network-internet-tech-concept-89970966.jpg' />
                             </div>
                         </div>
                     </div>
@@ -396,28 +409,8 @@
                     height: 100px;">
                         <div class="card" style="width: inherit; height: inherit;">
                             <div class="card-body d-flex flex-column justify-content-center align-items-center mx-auto">
-                                <i class="bi bi-alarm" style="font-size: 2rem; color:brown"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- <div class="text-white mx-2">
-                    <div style="width: 100px;
-                    height: 100px;">
-                        <div class="card" style="width: inherit; height: inherit;">
-                            <div
-                                class="card-body d-flex flex-column justify-content-center align-items-center mx-auto">
-                                <i class="bi bi-alarm" style="font-size: 2rem; color:brown"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div> -->
-                <div class="text-white mx-2">
-                    <div style="width: 100px;
-                    height: 100px;">
-                        <div class="card" style="width: inherit; height: inherit;">
-                            <div class="card-body d-flex flex-column justify-content-center align-items-center mx-auto">
-                                <i class="bi bi-alarm" style="font-size: 2rem; color:brown"></i>
+                                <img class='w-100'
+                                    src='./assets/images/electronic-technology-vector-business-logo-template-corporate-identity-abstract-chip-sign-global-network-internet-tech-concept-89970966.jpg' />
                             </div>
                         </div>
                     </div>
@@ -427,7 +420,7 @@
                     height: 100px;">
                         <div class="card" style="width: inherit; height: inherit;">
                             <div class="card-body d-flex flex-column justify-content-center align-items-center mx-auto">
-                                <i class="bi bi-alarm" style="font-size: 2rem; color:brown"></i>
+                                <img class='w-100' src='./assets/images/imagess.png' />
                             </div>
                         </div>
                     </div>
@@ -437,11 +430,22 @@
                     height: 100px;">
                         <div class="card" style="width: inherit; height: inherit;">
                             <div class="card-body d-flex flex-column justify-content-center align-items-center mx-auto">
-                                <i class="bi bi-alarm" style="font-size: 2rem; color:brown"></i>
+                                <img class='w-100' src='./assets/images/images.png' />
                             </div>
                         </div>
                     </div>
                 </div>
+                <div class="text-white mx-2">
+                    <div style="width: 100px;
+                    height: 100px;">
+                        <div class="card" style="width: inherit; height: inherit;">
+                            <div class="card-body d-flex flex-column justify-content-center align-items-center mx-auto">
+                                <img class='w-100' src='./assets/images/c1929d3492c2f64ab65b43808c072043.jpg' />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
                 <path fill="#302866" fill-opacity="1"
@@ -470,7 +474,8 @@
                         <div class="bg-white rounded shadow-sm py-5 px-4"><img
                                 src="https://bootstrapious.com/i/snippets/sn-team/teacher-4.jpg" alt="" width="100"
                                 class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
-                            <h5 class="mb-0"><a href='./useprofile.html'> Manuella Nevoresky </a></h5><span class="small text-uppercase text-muted">CEO -
+                            <h5 class="mb-0"><a href='./useprofile.html'> Manuella Nevoresky </a></h5><span
+                                class="small text-uppercase text-muted">CEO -
                                 Founder</span>
                             <ul class="social mb-0 list-inline mt-3">
                                 <li class="list-inline-item"><a href="#" class="social-link"><i
