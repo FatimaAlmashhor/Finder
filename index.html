@@ -14,19 +14,19 @@
     <link rel="stylesheet" href="./css/main.css">
     <title>Finder</title>
     <style>
-
-
         .parners {
             position: relative;
             bottom: -100px;
         }
-        .campany_image{
+
+        .campany_image {
             width: 150px;
             height: auto;
             /* border:1px solid rgb(192, 192, 192) ; */
             border-radius: 20px;
         }
-        .campany_image img{
+
+        .campany_image img {
             border-radius: inherit;
         }
     </style>
@@ -174,11 +174,11 @@
                                         </div>
                                     </div>
                                 </li>
-                                
+
                             </ul>
 
                         </div>
-                        <div class="infint_slider_col "  style="left: 180px;">
+                        <div class="infint_slider_col " style="left: 180px;">
 
                             <ul class="verical_slider_warrper slide_up row d-flex flex-column gy-2  ">
                                 <li style="width: 200px;
@@ -263,7 +263,7 @@
                                         </div>
                                     </div>
                                 </li>
-                                
+
                             </ul>
 
                         </div>
@@ -360,36 +360,58 @@
 
         <!-- slider -->
         <div id="myCarousel" class="carousel slide bg-purple-secondary my-6" data-bs-ride="carousel">
+            <div class="area">
+                <ul class="circles circles_dark">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+
             <div class="carousel-indicators ">
                 <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"
                     aria-current="true" aria-label="Slide 1"></button>
                 <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
                 <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
             </div>
-            <div class="carousel-inner " style="height: 40vh;">
+
+            <!-- slider boady -->
+            <div class="carousel-inner " style="height: 45vh;">
                 <div class="carousel-item active h-100 ">
                     <!-- <svg class="bd-placeholder-img" fill='red' width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg> -->
-
-                    <div class="container">
-                        <div class="carousel-caption text-start ">
-                            <h1 class="text-black">Example headline.</h1>
-                            <p class="color-gray">Some representative placeholder content for the first slide of the
-                                carousel.</p>
-                            <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="container">
+                                <div class="carousel-caption text-start ">
+                                    <h1 class="text-black">Looking For jobs.</h1>
+                                    <p class="color-gray">your can search and and filter your match job.</p>
+                                    <p><a class="btn btn-bordre text-black " href="./jobs.html">GO SEE JOBJs</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 h-100 container d-flex justify-content-center align-items-center">
+                            <!-- <div class="card ">
+                                hi
+                            </div> -->
                         </div>
                     </div>
+
                 </div>
                 <div class="carousel-item h-100">
-                    <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
-                        aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
-                    </svg>
 
                     <div class="container">
                         <div class="carousel-caption">
-                            <h1 class="text-black">Another example headline.</h1>
-                            <p class="color-gray">Some representative placeholder content for the second slide of the
-                                carousel.</p>
-                            <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
+                            <h1 class="text-black">You looking for your dearm job?</h1>
+                            <p class="color-gray">Just register now and start your journey 
+                               .</p>
+                            <p><a class="btn btn-bordre text-black" href="./login.html">Login</a></p>
                         </div>
                     </div>
                 </div>
@@ -400,10 +422,9 @@
 
                     <div class="container">
                         <div class="carousel-caption text-end">
-                            <h1 class="text-black">One more for good measure.</h1>
-                            <p class="color-gray">Some representative placeholder content for the third slide of this
-                                carousel.</p>
-                            <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
+                            <h1 class="text-black">Be part of our team.</h1>
+                            <p class="color-gray">Join our commuilty and find talented peoples .</p>
+                            <p><a class="btn  btn-bordre text-black" href="./compenies.html">Join us</a></p>
                         </div>
                     </div>
                 </div>
@@ -429,8 +450,8 @@
                         <a href='./compenies.html' class="card text-black card-hover pointer p-3 mb-2">
                             <div class="d-flex justify-content-between">
                                 <div class="d-flex flex-row align-items-center">
-                                    <div class="campany_image"> 
-                                    <img class='w-100' src="./assets/images/c1929d3492c2f64ab65b43808c072043.jpg" />   
+                                    <div class="campany_image">
+                                        <img class='w-100' src="./assets/images/c1929d3492c2f64ab65b43808c072043.jpg" />
                                     </div>
                                 </div>
                                 <div class="badge mt-4"> <span>Tech</span> </div>
@@ -441,17 +462,17 @@
                                 <div class="mt-1">
                                     <div>
                                         <ul class="d-flex">
-                                            <li><i class="bi bi-star-fill text-warning" ></i></li>
-                                            <li><i class="bi bi-star-fill text-warning" ></i></li>
-                                            <li><i class="bi bi-star-fill text-warning" ></i></li>
-                                            <li><i class="bi bi-star-fill text-warning" ></i></li>
-                                            <li><i class="bi bi-star-fill text-light" ></i></li>
+                                            <li><i class="bi bi-star-fill text-warning"></i></li>
+                                            <li><i class="bi bi-star-fill text-warning"></i></li>
+                                            <li><i class="bi bi-star-fill text-warning"></i></li>
+                                            <li><i class="bi bi-star-fill text-warning"></i></li>
+                                            <li><i class="bi bi-star-fill text-light"></i></li>
                                             <li><small class="color-gray">+300 follows</small></li>
 
                                         </ul>
                                     </div>
-                                    <div class="mt-3"> <span class="text1">+ 20 Year <br/>
-                                         <span class="text2">+ 30,000 employee</span></span> </div>
+                                    <div class="mt-3"> <span class="text1">+ 20 Year <br />
+                                            <span class="text2">+ 30,000 employee</span></span> </div>
                                 </div>
                             </div>
                         </a>
@@ -460,8 +481,8 @@
                         <a href='./compenies.html' class="card text-black card-hover pointer p-3 mb-2">
                             <div class="d-flex justify-content-between">
                                 <div class="d-flex flex-row align-items-center">
-                                    <div class="campany_image"> 
-                                    <img class='w-100' src="./assets/images/c1929d3492c2f64ab65b43808c072043.jpg" />   
+                                    <div class="campany_image">
+                                        <img class='w-100' src="./assets/images/c1929d3492c2f64ab65b43808c072043.jpg" />
                                     </div>
                                 </div>
                                 <div class="badge mt-4"> <span>Tech</span> </div>
@@ -472,17 +493,17 @@
                                 <div class="mt-1">
                                     <div>
                                         <ul class="d-flex">
-                                            <li><i class="bi bi-star-fill text-warning" ></i></li>
-                                            <li><i class="bi bi-star-fill text-warning" ></i></li>
-                                            <li><i class="bi bi-star-fill text-warning" ></i></li>
-                                            <li><i class="bi bi-star-fill text-warning" ></i></li>
-                                            <li><i class="bi bi-star-fill text-light" ></i></li>
+                                            <li><i class="bi bi-star-fill text-warning"></i></li>
+                                            <li><i class="bi bi-star-fill text-warning"></i></li>
+                                            <li><i class="bi bi-star-fill text-warning"></i></li>
+                                            <li><i class="bi bi-star-fill text-warning"></i></li>
+                                            <li><i class="bi bi-star-fill text-light"></i></li>
                                             <li><small class="color-gray">+300 follows</small></li>
 
                                         </ul>
                                     </div>
-                                    <div class="mt-3"> <span class="text1">+ 20 Year <br/>
-                                         <span class="text2">+ 30,000 employee</span></span> </div>
+                                    <div class="mt-3"> <span class="text1">+ 20 Year <br />
+                                            <span class="text2">+ 30,000 employee</span></span> </div>
                                 </div>
                             </div>
                         </a>
@@ -491,8 +512,8 @@
                         <a href='./compenies.html' class="card text-black card-hover pointer p-3 mb-2">
                             <div class="d-flex justify-content-between">
                                 <div class="d-flex flex-row align-items-center">
-                                    <div class="campany_image"> 
-                                    <img class='w-100' src="./assets/images/c1929d3492c2f64ab65b43808c072043.jpg" />   
+                                    <div class="campany_image">
+                                        <img class='w-100' src="./assets/images/c1929d3492c2f64ab65b43808c072043.jpg" />
                                     </div>
                                 </div>
                                 <div class="badge mt-4"> <span>Tech</span> </div>
@@ -503,22 +524,22 @@
                                 <div class="mt-1">
                                     <div>
                                         <ul class="d-flex">
-                                            <li><i class="bi bi-star-fill text-warning" ></i></li>
-                                            <li><i class="bi bi-star-fill text-warning" ></i></li>
-                                            <li><i class="bi bi-star-fill text-warning" ></i></li>
-                                            <li><i class="bi bi-star-fill text-warning" ></i></li>
-                                            <li><i class="bi bi-star-fill text-light" ></i></li>
+                                            <li><i class="bi bi-star-fill text-warning"></i></li>
+                                            <li><i class="bi bi-star-fill text-warning"></i></li>
+                                            <li><i class="bi bi-star-fill text-warning"></i></li>
+                                            <li><i class="bi bi-star-fill text-warning"></i></li>
+                                            <li><i class="bi bi-star-fill text-light"></i></li>
                                             <li><small class="color-gray">+300 follows</small></li>
 
                                         </ul>
                                     </div>
-                                    <div class="mt-3"> <span class="text1">+ 20 Year <br/>
-                                         <span class="text2">+ 30,000 employee</span></span> </div>
+                                    <div class="mt-3"> <span class="text1">+ 20 Year <br />
+                                            <span class="text2">+ 30,000 employee</span></span> </div>
                                 </div>
                             </div>
                         </a>
                     </div>
-                   
+
                 </div>
             </div>
         </section>
@@ -600,9 +621,10 @@
         <!-- employee section -->
         <section class="my-5">
             <!-- For demo purpose -->
-            
+
             <div class="container py-5 position-relative">
-                <div class="buble bg-purple-secondary position-absolute " style="left: 50px; width: 500px; height: 500px; top:-300px"></div>
+                <div class="buble bg-purple-secondary position-absolute "
+                    style="left: 50px; width: 500px; height: 500px; top:-300px"></div>
                 <div class="row text-center text-black">
                     <div class="col-lg-8 mx-auto">
                         <h1 class="">Team Page</h1>
@@ -616,11 +638,10 @@
 
                     <!-- Team item -->
                     <div class=" col-xl-3 col-sm-6 mb-5  ">
-                        <div class=" py-3 "><img
-                                src="https://bootstrapious.com/i/snippets/sn-team/teacher-4.jpg" alt="" width="100"
-                                class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
-                            <h5 class="mb-0"><a class="text-black" href='./useprofile.html'> Manuella Nevoresky </a></h5><span
-                                class="small text-uppercase text-muted">CEO -
+                        <div class=" py-3 "><img src="https://bootstrapious.com/i/snippets/sn-team/teacher-4.jpg" alt=""
+                                width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+                            <h5 class="mb-0"><a class="text-black" href='./useprofile.html'> Manuella Nevoresky </a>
+                            </h5><span class="small text-uppercase text-muted">CEO -
                                 Founder</span>
                             <ul class="social mb-0 list-inline mt-3">
                                 <li class="list-inline-item"><a href="#" class="social-link"><i
@@ -635,15 +656,14 @@
                         </div>
                     </div><!-- End -->
 
-                    
+
 
                     <!-- Team item -->
                     <div class=" col-xl-3 col-sm-6 mb-5  ">
-                        <div class=" py-3 "><img
-                                src="https://bootstrapious.com/i/snippets/sn-team/teacher-4.jpg" alt="" width="100"
-                                class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
-                            <h5 class="mb-0"><a class="text-black" href='./useprofile.html'> Manuella Nevoresky </a></h5><span
-                                class="small text-uppercase text-muted">CEO -
+                        <div class=" py-3 "><img src="https://bootstrapious.com/i/snippets/sn-team/teacher-4.jpg" alt=""
+                                width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+                            <h5 class="mb-0"><a class="text-black" href='./useprofile.html'> Manuella Nevoresky </a>
+                            </h5><span class="small text-uppercase text-muted">CEO -
                                 Founder</span>
                             <ul class="social mb-0 list-inline mt-3">
                                 <li class="list-inline-item"><a href="#" class="social-link"><i
@@ -658,15 +678,14 @@
                         </div>
                     </div><!-- End -->
 
-                    
+
 
                     <!-- Team item -->
                     <div class=" col-xl-3 col-sm-6 mb-5  ">
-                        <div class=" py-3 "><img
-                                src="https://bootstrapious.com/i/snippets/sn-team/teacher-4.jpg" alt="" width="100"
-                                class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
-                            <h5 class="mb-0"><a class="text-black" href='./useprofile.html'> Manuella Nevoresky </a></h5><span
-                                class="small text-uppercase text-muted">CEO -
+                        <div class=" py-3 "><img src="https://bootstrapious.com/i/snippets/sn-team/teacher-4.jpg" alt=""
+                                width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+                            <h5 class="mb-0"><a class="text-black" href='./useprofile.html'> Manuella Nevoresky </a>
+                            </h5><span class="small text-uppercase text-muted">CEO -
                                 Founder</span>
                             <ul class="social mb-0 list-inline mt-3">
                                 <li class="list-inline-item"><a href="#" class="social-link"><i
@@ -681,15 +700,14 @@
                         </div>
                     </div><!-- End -->
 
-                    
+
 
                     <!-- Team item -->
                     <div class=" col-xl-3 col-sm-6 mb-5  ">
-                        <div class=" py-3 "><img
-                                src="https://bootstrapious.com/i/snippets/sn-team/teacher-4.jpg" alt="" width="100"
-                                class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
-                            <h5 class="mb-0"><a class="text-black" href='./useprofile.html'> Manuella Nevoresky </a></h5><span
-                                class="small text-uppercase text-muted">CEO -
+                        <div class=" py-3 "><img src="https://bootstrapious.com/i/snippets/sn-team/teacher-4.jpg" alt=""
+                                width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+                            <h5 class="mb-0"><a class="text-black" href='./useprofile.html'> Manuella Nevoresky </a>
+                            </h5><span class="small text-uppercase text-muted">CEO -
                                 Founder</span>
                             <ul class="social mb-0 list-inline mt-3">
                                 <li class="list-inline-item"><a href="#" class="social-link"><i
@@ -704,9 +722,9 @@
                         </div>
                     </div><!-- End -->
 
-                    
 
-                  
+
+
                 </div>
             </div>
         </section>
@@ -769,7 +787,7 @@
                                     <a href="./login.html" class=" btn btn-bordre mt-2">Login</a>
                                     <div class=" btn btn-bordre mt-2 mx-2">العربية|</div>
                                 </li>
-                              
+
 
                             </ul>
                         </div>

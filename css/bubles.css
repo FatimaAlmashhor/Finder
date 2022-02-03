@@ -37,6 +37,9 @@
     bottom: -150px;
     
 }
+.circles_dark li{
+    background: rgba(23, 48, 189, 0.2);
+}
 
 .circles li:nth-child(1){
     left: 25%;
