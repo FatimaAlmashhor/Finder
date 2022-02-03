@@ -8,5 +8,5 @@ $(document).scroll(function () {
 
 $('#download_cv').click(function (e) {
     e.preventDefault();  //stop the browser from following
-    window.location.href = '../upload/FATIMA AMIN ALMASHHOR (1).pdf';
+    window.location.href = '../upload/FATIMAAMINALMASHHOR.pdf';
 });
