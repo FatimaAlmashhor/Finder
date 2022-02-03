@@ -116,6 +116,13 @@ transition: width 0.3s ;
 .btn-bordre:hover::after{
    width: 100%;
 }
+.collapse{
+    border: none;
+}
+.navbar-toggler:focus{
+    border: none;
+    outline: hidden;
+}
 .bg-animation {
     /* width: 100%; */
     /* height: 100vh; */
