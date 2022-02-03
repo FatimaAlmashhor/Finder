@@ -124,8 +124,9 @@
                         <div class="px-4 py-3">
                             <div class="d-flex flex-row justify-content-between">
                                 <h5 class="mb-0 py-2">About</h5>
-                                <a href='./editprofile.html' class="pointer icon-hover"><i class="bi bi-plus"
-                                        style="font-size: 2rem; color:gray"></i> </a>
+                                <div id='modal_add_skills' class="pointer icon-hover" data-bs-toggle="modal"
+                                            data-bs-target="#add_about_modal"><i class="bi bi-plus"
+                                                style="font-size: 2rem; color:gray"></i> </div>
                             </div>
                             <div class="p-4 row rounded shadow-sm  profile-card position-relative d-flex ">
                                 <div class="col-12 col-md-11 ">
@@ -142,8 +143,9 @@
                         <div class="px-4 py-3">
                             <div class="d-flex flex-row justify-content-between">
                                 <h5 class="mb-0 py-2">Experince</h5>
-                                <a href='./editprofile.html' class="pointer icon-hover"><i class="bi bi-plus"
-                                        style="font-size: 2rem; color:gray"></i> </a>
+                                <div class="pointer icon-hover" data-bs-toggle="modal"
+                                            data-bs-target="#add_expie_modal"><i class="bi bi-plus"
+                                                style="font-size: 2rem; color:gray"></i> </div>
                             </div>
                             <div class="p-4 row rounded shadow-sm  profile-card position-relative d-flex ">
                                 <div class="col-12 col-md-11 ">
@@ -181,8 +183,9 @@
                         <div class="px-4 py-3">
                             <div class="d-flex flex-row justify-content-between">
                                 <h5 class="mb-0 py-2">Skills</h5>
-                                <a href='./editprofile.html' class="pointer icon-hover"><i class="bi bi-plus"
-                                        style="font-size: 2rem; color:gray"></i> </a>
+                                <div id='modal_add_skills' class="pointer icon-hover" data-bs-toggle="modal"
+                                            data-bs-target="#add_skills_modal"><i class="bi bi-plus"
+                                                style="font-size: 2rem; color:gray"></i> </div>
                             </div>
                             <div class="p-4 row rounded shadow-sm  profile-card position-relative d-flex ">
                                 <div class="col-12 col-md-11 ">
@@ -200,8 +203,9 @@
                         <div class="px-4 py-3">
                             <div class="d-flex flex-row justify-content-between">
                                 <h5 class="mb-0 py-2">Cources</h5>
-                                <a href='./editprofile.html' class="pointer icon-hover"><i class="bi bi-plus"
-                                        style="font-size: 2rem; color:gray"></i> </a>
+                                <div id='modal_add_skills' class="pointer icon-hover" data-bs-toggle="modal"
+                                data-bs-target="#add_cource_modal"><i class="bi bi-plus"
+                                    style="font-size: 2rem; color:gray"></i> </div>
                             </div>
                             <div class="p-4 row rounded shadow-sm  profile-card position-relative d-flex ">
                                 <div class="col-12 col-md-11 ">
@@ -226,8 +230,9 @@
                         <div class="px-4 py-3">
                             <div class="d-flex flex-row justify-content-between">
                                 <h5 class="mb-0 py-2">Education</h5>
-                                <a href='./editprofile.html' class="pointer icon-hover"><i class="bi bi-plus"
-                                        style="font-size: 2rem; color:gray"></i> </a>
+                                <div id='modal_add_skills' class="pointer icon-hover" data-bs-toggle="modal"
+                                            data-bs-target="#add_educ_modal"><i class="bi bi-plus"
+                                                style="font-size: 2rem; color:gray"></i> </div>
                             </div>
 
                             <div class="p-4 row rounded shadow-sm  profile-card position-relative d-flex ">
@@ -294,6 +299,173 @@
             </div>
         </div>
     </main>
+        <!--modals  -->
+         <!-- skill modals  -->
+    <div class="modal fade" id="add_skills_modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Adding New Skill</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Add new skill.</p>
+                    <form>
+                        <div class="mb-3">
+                            <label for="skill-title" class="col-form-label">Skill:</label>
+                            <input type="text" class="form-control" id="skill-title">
+                        </div>
+
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- cource modals -->
+    <div class="modal fade" id="add_cource_modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Cources</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Add new skill.</p>
+                    <form>
+                        <div class="mb-3">
+                            <label for="skill-title" class="col-form-label">Cource Title:</label>
+                            <input type="text" class="form-control" id="skill-title">
+                        </div>
+                        <div class="mb-3">
+                            <label for="skill-title" class="col-form-label">Date :</label>
+                            <input type="date" class="form-control" id="skill-title">
+                        </div>
+                        <div class="mb-3">
+                            <label for="skill-title" class="col-form-label">More Description :</label>
+                            <textarea type="text" class="form-control" id="skill-title"></textarea>
+                        </div>
+
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- expirence modals -->
+    <div class="modal fade" id="add_expie_modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Experince</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Add new skill.</p>
+                    <form>
+                        <div class="mb-3">
+                            <label for="position_title" class="col-form-label">Position Title:</label>
+                            <input type="text" class="form-control" id="position_title">
+                        </div>
+                        <div class="mb-3">
+                            <label for="time_hired" class="col-form-label">Time Hired :</label>
+                            <input type="date" class="form-control" id="time_hired">
+                        </div>
+                        <div class="mb-3 form-check-inline">
+                            <input type="checkbox" class="" id="precent">
+                            <label for="precent" class="">Precent :</label>
+                        </div>
+                        <div class="mb-3">
+                            <label for="skill-title" class="col-form-label">Campany Name :</label>
+                            <input type="date" class="form-control" id="skill-title">
+                        </div>
+                        <div class="mb-3">
+                            <label for="skill-title" class="col-form-label">More Description :</label>
+                            <textarea type="text" class="form-control" id="skill-title"></textarea>
+                        </div>
+
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- educ modals -->
+    <div class="modal fade" id="add_educ_modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Education</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Add new skill.</p>
+                    <form>
+                        <div class="mb-3">
+                            <label for="position_title" class="col-form-label">Place Name:</label>
+                            <input type="text" class="form-control" id="position_title">
+                        </div>
+                        <div class="mb-3">
+                            <label for="time_hired" class="col-form-label">Start Time :</label>
+                            <input type="date" class="form-control" id="time_hired">
+                        </div>
+                        <div class="mb-3">
+                            <label for="time_hired" class="col-form-label">Finsh Time :</label>
+                            <input type="date" class="form-control" id="time_hired">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="skill-title" class="col-form-label">Filed title :</label>
+                            <input type="date" class="form-control" id="skill-title">
+                        </div>
+                        <div class="mb-3">
+                            <label for="skill-title" class="col-form-label">More Description :</label>
+                            <textarea type="text" class="form-control" id="skill-title"></textarea>
+                        </div>
+
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <!-- image load modal -->
+<div class="modal fade " id="add_image_modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Upload Image</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <input type="file" />
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">No</button>
+                <button type="button" class="btn btn-danger">Upload</button>
+            </div>
+        </div>
+    </div>
+</div>
     <footer>
         <section class="">
             <!-- Footer -->

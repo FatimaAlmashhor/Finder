@@ -48,6 +48,32 @@
         .profile_page.show {
             display: block;
         }
+
+        .avatar {
+            position: relative;
+        }
+
+        .avatar_icon {
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            bottom: 35px;
+            right: 0px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(173, 173, 173);
+            cursor: pointer;
+        }
+
+        .avatar_icon:hover {
+            background-color: rgb(218, 218, 218);
+        }
+
+        .avatar_icon img {
+            font-size: 1.2rem;
+        }
     </style>
 </head>
 
@@ -71,13 +97,19 @@
                                     <div class="bg-purple-primary w-100">
                                         <div class=" container px-4 pt-0 pb-4 cover">
 
-                                            <div class="media d-flex flex-row align-items-end profile-head">
-                                                <div class="profile mr-3 d-flex flex-column"><img
-                                                        src="https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80"
+                                            <div class="media  d-flex flex-row align-items-end profile-head">
+                                                <div class="profile  avatar  d-flex flex-column">
+                                                    <span data-bs-target="#add_image_modal" data-bs-toggle="modal"
+                                                        class="avatar_icon " id="">
+                                                        <i class="bi bi-box-arrow-in-down-left"
+                                                            style="color : white"></i>
+                                                    </span>
+                                                    <img src="https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80"
                                                         alt="..." width="130" class="rounded mb-2 img-thumbnail"><a
                                                         href="./profile.html"
                                                         class="btn btn-outline-dark btn-sm btn-block">View your
-                                                        profile</a></div>
+                                                        profile</a>
+                                                </div>
 
                                                 <div class="media-body mb-5 text-white mx-2">
                                                     <h4 class="mt-0 mb-0">Mark Williams</h4>
@@ -92,26 +124,28 @@
                                             <div class="w-100  slid_bar_section">
                                                 <div class='text-black  bg-secondary '>
 
-                                                    <ul class="side_bar_list list-group mb-3 ">
+                                                    <ul class="side_bar_list  mb-3 ">
                                                         <li data-btn-id='0'
                                                             class="dashboard-side active list-group-item d-flex justify-content-between lh-condensed pointer">
                                                             <div class="d-flex">
-                                                                <i class="bi bi-person icon"></i>
+                                                                <!-- <i class="bi bi-person icon"></i> -->
                                                                 <div class="mx-2">
                                                                     <h6 class="my-0 ">
-                                                                        <span> Inforamtion </span></h6>
-                                                                     <small class="text-muted">Name , email ...</small>
+                                                                        <span> Inforamtion </span>
+                                                                    </h6>
+                                                                    <small class="text-muted">Name , email ...</small>
                                                                 </div>
                                                             </div>
                                                         </li>
                                                         <li data-btn-id='1'
-                                                            class=" dashboard-side list-group-item d-flex justify-content-between lh-condensed pointer">
+                                                            class=" dashboard-side list-group-item d-flex justify-content-start lh-condensed pointer">
                                                             <div class="d-flex">
-                                                                <i class="bi bi-star  icon"></i>
-                                                                <div class="mx-2">
+                                                                <!-- <i class="bi bi-star "></i> -->
+                                                                <div class="">
                                                                     <h6 class="my-0 ">
-                                                                        Skills </h6>
-                                                                     <small class="text-muted">Drowing , Programming ...</small>
+                                                                        <span> Skills </span>
+                                                                    </h6>
+                                                                    <small class="text-muted">Name , email ...</small>
                                                                 </div>
                                                             </div>
                                                         </li>
@@ -278,15 +312,14 @@
                                     </div>
                                     <div class=" row rounded  position-relative d-flex py-3">
                                         <div class="border-bottom col-11 py-3 ">
-                                            <p class="font-italic mb-0 ">Web Developer</p>
+                                            <p class="font-italic mb-0 ">Web Design</p>
                                         </div>
                                         <div class=" edit-icon col-1 col-md-1 pointer flex-row justify-content-end">
                                             <div class="icon-hover ">
                                                 <!-- Drop down -->
                                                 <div class="dropdown">
-                                                    <a class=" dropdown-toggle" href="#" role="button"
-                                                        id="dropdownMenuLink" data-bs-toggle="dropdown"
-                                                        aria-expanded="false">
+                                                    <a class="" href="#" role="button" id="dropdownMenuLink"
+                                                        data-bs-toggle="dropdown" aria-expanded="false">
                                                         <i class="bi bi-three-dots-vertical circle-icon"
                                                             style="font-size: 1.2rem;"></i>
                                                     </a>
@@ -299,6 +332,7 @@
                                                             <p class="dropdown-item text-danger" data-bs-toggle="modal"
                                                                 data-bs-target="#delete_modal">Delete</p>
                                                         </li>
+
                                                     </ul>
                                                 </div>
                                             </div>
@@ -306,30 +340,34 @@
                                     </div>
                                     <div class=" row rounded  position-relative d-flex py-3">
                                         <div class="border-bottom col-11 py-3 ">
-                                            <p class="font-italic mb-0 ">Web Developer</p>
+                                            <p class="font-italic mb-0 ">Frontend Developer</p>
                                         </div>
                                         <div class=" edit-icon col-1 col-md-1 pointer flex-row justify-content-end">
                                             <div class="icon-hover ">
                                                 <!-- Drop down -->
                                                 <div class="dropdown">
-                                                    <a class=" dropdown-toggle" href="#" role="button"
-                                                        id="dropdownMenuLink" data-bs-toggle="dropdown"
-                                                        aria-expanded="false">
+                                                    <a class="" href="#" role="button" id="dropdownMenuLink"
+                                                        data-bs-toggle="dropdown" aria-expanded="false">
                                                         <i class="bi bi-three-dots-vertical circle-icon"
                                                             style="font-size: 1.2rem;"></i>
                                                     </a>
                                                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                                        <p class="dropdown-item" data-bs-toggle="modal"
-                                                            data-bs-target="#add_skills_modal">Edit</p>
+                                                        <li>
+                                                            <p class="dropdown-item" data-bs-toggle="modal"
+                                                                data-bs-target="#add_skills_modal">Edit</p>
+                                                        </li>
                                                         <li>
                                                             <p class="dropdown-item text-danger" data-bs-toggle="modal"
                                                                 data-bs-target="#delete_modal">Delete</p>
                                                         </li>
+
                                                     </ul>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
+
+
                                 </div>
 
                                 <!-- education page -->
@@ -344,10 +382,12 @@
                                         <div class="border-bottom col-11 py-3 ">
                                             <div class=" my-2 pb-3 row">
                                                 <div class="col-3">
-                                                    <div class="p-1 border">
+                                                    <div class="  p-1 border">
+
                                                         <img class="w-100"
                                                             src="./assets/images/electronic-technology-vector-business-logo-template-corporate-identity-abstract-chip-sign-global-network-internet-tech-concept-89970966.jpg"
                                                             alt="">
+
                                                     </div>
                                                 </div>
                                                 <div class="col-9 d-flex flex-column justify-content-center">
@@ -432,8 +472,8 @@
                                 <div class="profile_page skills_page col-12 px-5 py-3 order-md-1">
                                     <div class="d-flex flex-row justify-content-between">
                                         <h5 class="mb-0 py-2">Experince</h5>
-                                        <div id='modal_add_skills' class="pointer icon-hover" data-bs-toggle="modal"
-                                            data-bs-target="#add_expir_modal"><i class="bi bi-plus"
+                                        <div class="pointer icon-hover" data-bs-toggle="modal"
+                                            data-bs-target="#add_expie_modal"><i class="bi bi-plus"
                                                 style="font-size: 2rem; color:gray"></i> </div>
                                     </div>
                                     <!-- expirence 1 -->
@@ -660,7 +700,7 @@
                                     <a href="./login.html" class=" btn btn-bordre mt-2">Login</a>
                                     <div class=" btn btn-bordre mt-2 mx-2">العربية|</div>
                                 </li>
-                              
+
 
                             </ul>
                         </div>
@@ -690,7 +730,7 @@
         </section>
     </footer>
 
-    <!--modals  -->
+    <!-- skill modals  -->
     <div class="modal fade" id="add_skills_modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -721,7 +761,7 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title">Expirence</h5>
+                    <h5 class="modal-title">Cources</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
@@ -756,7 +796,7 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title">Education</h5>
+                    <h5 class="modal-title">Experince</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
@@ -798,7 +838,7 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title">Adding New Skill</h5>
+                    <h5 class="modal-title">Education</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
@@ -836,7 +876,7 @@
         </div>
     </div>
 
-
+    <!-- delete modal -->
     <div class="modal fade" id="delete_modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -850,6 +890,27 @@
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">No</button>
                     <button type="button" class="btn btn-danger">Delete</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- image load modal -->
+    <div class="modal fade " id="add_image_modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Upload Image</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <input type="file" />
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">No</button>
+                    <button type="button" class="btn btn-danger">Upload</button>
                 </div>
             </div>
         </div>
